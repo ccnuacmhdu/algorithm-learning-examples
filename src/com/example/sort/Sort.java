@@ -255,18 +255,27 @@ public class Sort{
             left = 2*index + 1;
         }
     }
-    //产生随机数组，数组大小自己设定，数组中元素的值范围是[0, scope]
-    //Math.random()---double---[0,1)
-    //Math.random()*x---double---[0,x)
-    //(int)(Math.random()*x)---int---[0,x-1]
+
+    /**
+     * 产生随机数组，数组大小是 size，数组元素值都是在 [-scope, scope] 范围内
+     *
+     * Math.random()---double---[0.0, 1.0)
+     * Math.random()*x---double---[0.0, x)
+     * (int)(Math.random()*x)---int---[0, x-1]
+     *
+     *
+     * @param size
+     * @param scope
+     * @return
+     */
     public static int[] generateRandomArray(int size, int scope){
         int[] a = new int[(int)((size+1)*Math.random())];
         for(int i = 0; i < a.length; i++){
-            a[i] = (int)((scope+1)*Math.random()) - (int)(scope*Math.random());
+            a[i] = -scope + (int)(Math.random()*(2*scope+1));
         }
         return a;
     }
-    //拷贝数组
+    // 拷贝数组
     public static int[] copyArray(int[] a){
         if(a == null){
             return null;
@@ -277,7 +286,7 @@ public class Sort{
         }
         return b;
     }
-    //测试
+    // 判断两个数组是否完全相同
     public static boolean isEqual(int[] a, int[] b){
         if(a != null && b == null){
             return false;
