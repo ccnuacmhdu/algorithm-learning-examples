@@ -48,7 +48,7 @@ public class Sort{
         for(int i = 0; i < testTime; i++){
             int[] a = generateRandomArray(size, scope);
             int[] b = copyArray(a);
-            heapSort2(a);
+            quickSort(a);
             compare(b);
             if(isEqual(a, b) == false){
                 flag  = false;
@@ -60,218 +60,131 @@ public class Sort{
         System.out.println(flag);
     }
 
-    //测试
-    public static void compare(int[] a){
-        Arrays.sort(a);
+    public static void bubbleSort(int[] a) {
+        if(a == null || a.length < 2) {
+            return;
+        }
+        for(int i = a.length-1; i > 0; i--) {
+            boolean hasSwap = false;
+            for(int j = 0; j < i; j++) {
+                if(a[j] > a[j+1]) {
+                    swap(a, j, j+1);
+                    hasSwap = true;
+                }
+            }
+            if(!hasSwap) {
+                break;
+            }
+        }
     }
 
-    /*
-        归并排序
-            O(N*logN) O(N) 稳定
-            递归的时间复杂度估计之
-            master公式: T(N) = a*T(N/b) + O(N^d)
-                        log(b, a) = d ---> O((N^d)*logN)
-                        log(b, a) < d ---> O(N^d)
-                        log(b, a) > d ---> O(N^(log(b, a)))
-        a是调用子问题次数，N是父问题规模，N/b是子问题规模，O(N^d)是除了调用子问题之外的时间复杂度。
-        从形式上来看，也可以看出来这个公式表明父问题平均分成了规模相同的若干个子问题才可以用下面的结论。
-    */
-    public static void mergeSort(int[] a){
-        if(a == null || a.length < 2){
+    public static void selectSort(int[] a) {
+        if(a == null || a.length < 2) {
+            return;
+        }
+        for(int i = 0; i < a.length - 1; i++) {
+            int minIndex = i;
+            for(int j = i + 1; j < a.length; j++) {
+                minIndex = a[j] < a[minIndex] ? j : minIndex;
+            }
+            if(minIndex != i) {
+                swap(a, minIndex, i);
+            }
+        }
+    }
+
+    public static void insertSort(int[] a) {
+        if(a == null || a.length < 2) {
+            return;
+        }
+        for(int i = 1; i < a.length; i++) {
+            for(int j = i; j > 0 && a[j] < a[j-1]; j--) {
+                swap(a, j, j-1);
+            }
+        }
+    }
+
+    public static void mergeSort(int[] a) {
+        if(a == null || a.length < 2) {
             return;
         }
         mergeSort(a, 0, a.length-1);
     }
-    public static void mergeSort(int[] a, int l, int r){
-        if(l == r){
+    public static void mergeSort(int[] a, int l, int r) {
+        if(r - l < 1) {
             return;
         }
-        int mid = l + ((r-l)>>1);
+        int mid = l + ((r - l) >> 1);
         mergeSort(a, l, mid);
-        mergeSort(a, mid+1, r);
+        mergeSort(a, mid + 1, r);
         merge(a, l, mid, r);
     }
-    public static void merge(int[] a, int l, int mid, int r){
-        int i = l;
-        int j = mid + 1;
-        int[] tmp = new int[r-l+1];
+    public static void merge(int[] a, int l, int mid, int r) {
+        int tmp[] = new int[r-l+1];
+        int left = l;
+        int right = mid + 1;
         int cnt = 0;
-        while(i <= mid && j <= r){
-            if(a[i] <= a[j]){
-                tmp[cnt++] = a[i++];
-            }else{
-                tmp[cnt++] = a[j++];
+        while (left <= mid && right <= r) {
+            if(a[left] <= a[right]) {
+                tmp[cnt++] = a[left++];
+            } else {
+                tmp[cnt++] = a[right++];
             }
         }
-        while(i <= mid){
-            tmp[cnt++] = a[i++];
+        while (left <= mid) {
+            tmp[cnt++] = a[left++];
         }
-        while(j <= r){
-            tmp[cnt++] = a[j++];
+        while (right <= r) {
+            tmp[cnt++] = a[right++];
         }
-        for(int k = 0; k < cnt; k++){
-            a[k+l] = tmp[k];
+        for(int k = 0; k < cnt; k++) {
+            a[l+k] = tmp[k];
         }
     }
 
-    /*
-        选择排序
-            O(N^2) O(1) 不稳定，如8 2 8 7 9第二次选择7与8交换导致两个8与原来的顺序颠倒
-    */
-    public static void selectSort(int[] a){
-        if(a == null || a.length < 2){
+    public static void quickSort(int[] a) {
+        if(a == null || a.length < 2) {
             return;
         }
-        for(int i = 0; i < a.length - 1; i++){
-            int minIndex = i;
-            for(int j = i + 1; j < a.length; j++){
-                minIndex = a[j] < a[minIndex] ? j : minIndex;
-            }
-            swap(a, minIndex, i);
+        quickSort(a, 0, a.length - 1);
+    }
+    public static void quickSort(int[] a, int l, int r) {
+        if(r > l) {
+            int[] tmp = partition(a, l, r);
+            quickSort(a, l, tmp[0] - 1);
+            quickSort(a, tmp[1] + 1, r);
         }
     }
-    public static void swap(int[] a, int i, int j){
+    // 荷兰国旗问题，返回等于 pivot 区域的左右边界
+    public static int[] partition(int[] a, int l, int r) {
+        int pivot = a[l];
+        int small = l - 1;  // 小于 pivot 区右边界
+        int big = r + 1;    // 大于 pivot 区左边界
+        int cur = l;
+        while(cur < big) {
+            if(a[cur] < pivot) {
+                swap(a, cur++, ++small);
+            } else if (a[cur] == pivot) {
+                cur++;
+            } else {
+                swap(a, cur, --big);
+            }
+        }
+        return new int[]{small + 1, big - 1};
+    }
+
+    // TODO heapSort
+
+
+    public static void swap(int[] a, int i, int j) {
         int tmp = a[i];
         a[i] = a[j];
         a[j] = tmp;
     }
 
-    /*
-        冒泡排序
-            O(N^2) O(1) 稳定
-    */
-    public static void bubbleSort(int[] a){
-        if(a == null || a.length < 2){
-            return;
-        }
-        for(int i = a.length - 1; i >= 1; i--){
-            for(int j = 0; j < i; j++){
-                if(a[j] > a[j+1]){
-                    swap(a, j, j+1);
-                }
-            }
-        }
-    }
-
-    /*
-        插入排序
-            O(N)-O(N^2) O(1) 稳定
-    */
-    public static void insertSort(int[] a){
-        if(a == null || a.length < 2){
-            return;
-        }
-        for(int i = 1; i < a.length; i++){
-            for(int j = i-1; j >= 0 && a[j+1] < a[j]; j--){
-                swap(a, j, j+1);
-            }
-        }
-    }
-
-    /*
-        快速排序
-            O(N*logN)-O(N^2) O(logN)-O(N)
-            不稳定，比如6，6，6，4序列，当前数是第一个6，划分参考值是5，6>5，和大于区左边数4交换
-    */
-    public static void quickSort(int[] a){
-        if(a == null || a.length < 2){
-            return;
-        }
-        quickSort(a, 0, a.length-1);
-    }
-    public static void quickSort(int[] a, int l, int r){
-        if(l < r){
-            int[] tmp = partition(a, l, r);
-            quickSort(a, l, tmp[0]-1);
-            quickSort(a, tmp[1]+1, r);
-        }
-    }
-    public static int[] partition(int[] a, int l, int r){
-        int small = l - 1;
-        int big = r + 1;
-        int cur = l;
-        int pivot = l + (int)(Math.random()*(r-l+1));
-        int v = a[pivot]; // 没改进前，v也不可是a[l]，因为a[l]可能交换到后面导致a[l]值变化
-        while(cur < big){
-            if(a[cur] > v){
-                swap(a, cur, --big);
-            }else if(a[cur] < v){
-                swap(a, cur++, ++small);
-            }else{
-                cur++;
-            }
-        }
-        return new int[]{small+1, big-1};
-    }
-
-    /*
-        堆排序（直接用JavaAPI）
-        O(N*logN) O(1) 不稳定，不稳定，如4 1 2 2第一步形成小根堆，就已不稳定了
-    */
-    public static void heapSort1(int[] a){
-        if(a == null || a.length < 2){
-            return;
-        }
-        //默认就是小根堆，下面的比较器没必要传入，下面是为了帮助用大根堆的时候这样用
-        PriorityQueue<Integer> que = new PriorityQueue<Integer>(100, new Comparator<Integer>(){
-            public int compare(Integer x, Integer y){
-                return x - y;
-            }
-        });
-        for(int i = 0; i < a.length; i++){
-            que.add(a[i]);
-        }
-        int cnt = 0;
-        while(!que.isEmpty()){
-            a[cnt++] = que.poll();
-        }
-    }
-
-    /*
-        堆排序（手动实现）
-    */
-    public static void heapSort2(int[] a){
-        if(a == null || a.length < 2){
-            return;
-        }
-        //1.先把数组调成大根堆
-        for(int i = 0; i < a.length; i++){
-            heapInsert(a, i);
-        }
-        //2.大根堆堆顶元素和堆尾元素交换，堆大小减1，堆顶元素下沉操作
-        int heapSize = a.length;
-        swap(a, 0, --heapSize);
-        //3.重复2操作，直到堆大小为0
-        while(heapSize > 0){
-            heapify(a, 0, heapSize);
-            swap(a, 0, --heapSize);
-        }
-    }
-    public static void heapInsert(int[] a, int index){
-        while(a[index] > a[(index-1)/2]){
-            swap(a, index, (index-1)/2);
-            index = (index-1)/2;
-        }
-    }
-    public static void heapify(int[] a, int index, int heapSize){
-        int left = 2*index + 1;
-        while(left < heapSize){
-            int right = left + 1;
-            int big = left;
-            if(right < heapSize && a[right] > a[left]){
-                big = right;
-            }
-            if(a[index] >= a[big]){
-                big = index;
-            }
-
-            if(big == index){
-                break;
-            }
-            swap(a, big, index);
-            index = big;
-            left = 2*index + 1;
-        }
+    // 测试（使用库排序函数 sort 作为对数器中能保证正确的排序算法，来检验自己写的排序算法的正确性）
+    public static void compare(int[] a){
+        Arrays.sort(a);
     }
 
     /**
@@ -293,7 +206,8 @@ public class Sort{
         }
         return a;
     }
-    // 拷贝数组
+
+    // 拷贝数组 a 并返回新数组的引用
     public static int[] copyArray(int[] a){
         if(a == null){
             return null;
@@ -304,6 +218,7 @@ public class Sort{
         }
         return b;
     }
+
     // 判断两个数组是否完全相同
     public static boolean isEqual(int[] a, int[] b){
         if(a != null && b == null){
