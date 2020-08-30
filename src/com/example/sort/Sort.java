@@ -60,6 +60,10 @@ public class Sort{
         System.out.println(flag);
     }
 
+    /**
+     * 冒泡排序
+     * @param a
+     */
     public static void bubbleSort(int[] a) {
         if(a == null || a.length < 2) {
             return;
@@ -78,6 +82,10 @@ public class Sort{
         }
     }
 
+    /**
+     * 选择排序
+     * @param a
+     */
     public static void selectSort(int[] a) {
         if(a == null || a.length < 2) {
             return;
@@ -93,6 +101,10 @@ public class Sort{
         }
     }
 
+    /**
+     * 插入排序
+     * @param a
+     */
     public static void insertSort(int[] a) {
         if(a == null || a.length < 2) {
             return;
@@ -104,6 +116,17 @@ public class Sort{
         }
     }
 
+    /**
+     * 归并排序
+     *
+     * 递归的时间复杂度估计之 master公式: T(N) = a*T(N/b) + O(N^d)
+     * 						log(b, a) = d ---> O((N^d)*logN)
+     * 						log(b, a) < d ---> O(N^d)
+     * 						log(b, a) > d ---> O(N^(log(b, a)))
+     * 		a 是调用子问题次数，N 是父问题规模，N/b 是子问题规模，O(N^d)是除了调用子问题之外的时间复杂度。
+     * 		从形式上来看，也可以看出来这个公式表明父问题平均分成了规模相同的若干个子问题才可以用上面的结论。
+     * @param a
+     */
     public static void mergeSort(int[] a) {
         if(a == null || a.length < 2) {
             return;
@@ -142,6 +165,13 @@ public class Sort{
         }
     }
 
+    /**
+     * 快速排序（过程图解点击 README.md 链接）
+     *
+     * 时间：O(N*logN)-O(N^2)
+     * 空间：O(logN)-O(N)
+     * @param a
+     */
     public static void quickSort(int[] a) {
         if(a == null || a.length < 2) {
             return;
@@ -157,7 +187,8 @@ public class Sort{
     }
     // 荷兰国旗问题，返回等于 pivot 区域的左右边界
     public static int[] partition(int[] a, int l, int r) {
-        int pivot = a[l];
+        int choose = l + (int)((r-l)*Math.random());
+        int pivot = a[choose];
         int small = l - 1;  // 小于 pivot 区右边界
         int big = r + 1;    // 大于 pivot 区左边界
         int cur = l;
@@ -173,7 +204,63 @@ public class Sort{
         return new int[]{small + 1, big - 1};
     }
 
-    // TODO heapSort
+    /**
+     * 堆排序
+     * @param a
+     */
+    public static void heapSort(int[] a) {
+        if(null == a || a.length < 2) {
+            return;
+        }
+        for(int i = 0; i < a.length; i++) {
+            heapInsert(a, i);
+        }
+        int size = a.length - 1;
+        while (size > 0) {
+            swap(a, 0, size--);
+            heapify(a, size);
+        }
+    }
+    public static void heapInsert(int[] a, int loc) {
+        while (a[loc] > a[(loc-1)/2]) {
+            swap(a, loc, (loc-1)/2);
+            loc = (loc-1)/2;
+        }
+    }
+    public static void heapify(int[] a, int size) {
+        int l = 1;
+        while (l <= size) {
+            // 刚开始把 int max = l 放在 while 上面了！错
+            int max = l;
+            int r = l + 1;
+            if(r <= size && a[r] > a[l]) {
+                max = r;
+            }
+            if(a[max] <= a[l/2]) {
+                break;
+            }
+            swap(a, max, l/2);
+            l = max*2 + 1;
+        }
+    }
+
+    /**
+     * 堆排序（借助 API）
+     * @param a
+     */
+    public static void heapSort2(int[] a) {
+        if(null == a || a.length < 2) {
+            return;
+        }
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>((o1, o2) -> o1.compareTo(o2));
+        for(int i = 0; i < a.length; i++) {
+            pq.add(a[i]);
+        }
+        int k = 0;
+        while (!pq.isEmpty()) {
+            a[k++] = pq.poll();
+        }
+    }
 
 
     public static void swap(int[] a, int i, int j) {
