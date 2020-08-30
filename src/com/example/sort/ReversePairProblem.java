@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * 暴力 / 归并排序
  */
 public class ReversePairProblem {
-    
+
     public static ArrayList<String> mergeSort(int[] a){
         if(a == null || a.length < 2){
             return new ArrayList<String>();
