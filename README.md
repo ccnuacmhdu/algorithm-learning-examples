@@ -9,3 +9,10 @@ com.example.sort.Sort
 com.example.sort.SmallSumProblem
 ## 逆序对问题
 com.example.sort.ReversePairProblem
+
+# 二分查找
+com.example.binarySearch.BinarySearch
+## 查找有序数组大于等于某数的最左位置
+com.example.binarySearch.BinarySearchExample01
+## 局部最小值问题
+com.example.binarySearch.BinarySearchExample02
