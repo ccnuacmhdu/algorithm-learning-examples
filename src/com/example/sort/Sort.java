@@ -1,7 +1,6 @@
 package com.example.sort;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
@@ -48,7 +47,7 @@ public class Sort{
         for(int i = 0; i < testTime; i++){
             int[] a = generateRandomArray(size, scope);
             int[] b = copyArray(a);
-            quickSort(a);
+            heapSort(a);
             compare(b);
             if(isEqual(a, b) == false){
                 flag  = false;
