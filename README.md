@@ -35,5 +35,7 @@ com.example.offer.OfferProblem01 <br />
 
 
 
-
 # Leetcode 刷题篇
+
+### 51. N 皇后
+com.example.leetcode.leetcode_51
