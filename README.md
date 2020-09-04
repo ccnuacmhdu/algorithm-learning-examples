@@ -22,7 +22,8 @@ com.example.binarySearch.BinarySearchExample02
 com.example.greedy.GreedyExample01
 #### 3.2 金条分割问题
 com.example.greedy.GreedyExample02
-
+#### 3.3 安排最多的项目问题
+com.example.greedy.GreedyExample03
 
 
 
