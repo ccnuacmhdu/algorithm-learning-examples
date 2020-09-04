@@ -24,7 +24,8 @@ com.example.greedy.GreedyExample01
 com.example.greedy.GreedyExample02
 #### 3.3 安排最多的项目问题
 com.example.greedy.GreedyExample03
-
+#### 3.4 数据流中随时可取得中位数问题
+com.example.greedy.GreedyExample04
 
 
 
