@@ -20,6 +20,8 @@ com.example.binarySearch.BinarySearchExample02
 ## 3 贪心
 #### 3.1 字符串拼接问题
 com.example.greedy.GreedyExample01
+#### 3.2 金条分割问题
+com.example.greedy.GreedyExample02
 
 
 
