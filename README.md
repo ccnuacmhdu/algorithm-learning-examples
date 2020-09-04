@@ -26,6 +26,8 @@ com.example.greedy.GreedyExample02
 com.example.greedy.GreedyExample03
 #### 3.4 数据流中随时可取得中位数问题
 com.example.greedy.GreedyExample04
+#### 3.5 项目利润最大问题
+com.example.greedy.GreedyExample05
 
 
 
