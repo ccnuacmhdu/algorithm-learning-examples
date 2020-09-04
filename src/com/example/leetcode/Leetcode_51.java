@@ -7,7 +7,7 @@ import java.util.List;
  * 【N 皇后问题】
  * 暴力回溯法，每行只能放在某列，逐行放即可
  */
-public class leetcode_51 {
+public class Leetcode_51 {
     public List<List<String>> solveNQueens(int n) {
         int[] m = new int[n+1];
         List<List<String>> res = new ArrayList();
