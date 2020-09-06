@@ -1,5 +1,7 @@
 package com.example.leetcode;
 
+import com.example.skipList.SkipList;
+
 import java.util.*;
 
 /**
@@ -154,17 +156,11 @@ public class Leetcode_60 {
     }
 
     /**
-     * 【方式四：待做】
-     * 发现优化点，可以用二叉平衡搜索树/跳表等结构把有序数序列查询/删除复杂度降低到 O(logN)，
-     * 使得最后复杂度降低到 O(NlogN)
-     * @param n
-     * @param k
-     * @return
+     * 【方式四：行不通】
+     * 发现优化点，和人讨论后，说是可以用二叉平衡搜索树/跳表等结构把有序数序列查询/删除复杂度降低到 O(logN)，
+     * 但实操后发现行不通，因为参看方式三可知删除某节点会导致一些元素的索引发生改变，而跳表不能像 List 一样动态
+     * 改变各个元素的索引，根本行不通。。。
      */
-    public String getPermutation_04(int n, int k) {
-        // TODO
-        return "";
-    }
 
     // test
     public static void main(String[] args) {
