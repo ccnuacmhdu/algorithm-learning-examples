@@ -30,8 +30,8 @@ com.example.greedy.GreedyExample04
 com.example.greedy.GreedyExample05
 
 ## 4 跳表
-com.example.skipList.SkipList
-
+com.example.skipList.SkipList <br />
+[跳表图解](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/skiplist.png)
 
 
 
