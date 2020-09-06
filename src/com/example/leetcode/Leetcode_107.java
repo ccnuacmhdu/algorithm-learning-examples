@@ -25,7 +25,6 @@ public class Leetcode_107 {
 
         Map<TreeNode, Integer> map = new LinkedHashMap<>();
         map.put(root, 0);
-
         while (!que.isEmpty()) {
             root = que.poll();
             if(root.left != null) {
