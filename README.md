@@ -29,6 +29,9 @@ com.example.greedy.GreedyExample04
 #### 3.5 项目利润最大问题
 com.example.greedy.GreedyExample05
 
+## 4 跳表
+com.example.skipList.SkipList
+
 
 
 
