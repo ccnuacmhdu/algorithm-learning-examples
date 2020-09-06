@@ -16,6 +16,16 @@ import java.util.Stack;
  * }
  */
 public class Leetcode_257 {
+
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
+    }
     /**
      * 【解法一：递归+回溯】
      * @param root
@@ -68,15 +78,5 @@ public class Leetcode_257 {
                 process_02(root.right, sb.toString(), res);
             }
         }
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }
