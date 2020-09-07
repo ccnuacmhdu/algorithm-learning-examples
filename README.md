@@ -54,4 +54,6 @@ com.example.leetcode.Leetcode_257
 com.example.leetcode.Leetcode_60
 ### 107 二叉树的层次遍历 II
 com.example.leetcode.Leetcode_107
+### 347 前 K 个高频元素
+com.example.leetcode.Leetcode_347
 
