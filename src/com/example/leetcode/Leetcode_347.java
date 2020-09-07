@@ -73,4 +73,51 @@ public class Leetcode_347 {
         }
         return res;
     }
+    /**
+     * 【方式三：桶排序】
+     * 1. HashMap 统计每个数及对应出现次数。
+     * 2. List<Integer>[] 统计每个出现次数对应的所有数字，该数组下标就是出现次数，就是按照出现次数排好序了，
+     * 然后从后往前遍历，取出 k 个值即可。
+     */
+    public int[] topKFrequent_03(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i < nums.length; i++) {
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+        }
+        // 可能有多个数出现次数相同
+        List<Integer>[] cnt = new List[nums.length+1];
+        for(Integer key: map.keySet()) {
+            if(cnt[map.get(key)] == null) {
+                cnt[map.get(key)] = new ArrayList<>();
+            }
+            cnt[map.get(key)].add(key);
+        }
+        int[] res = new int[k];
+        int index = 0;
+        for(int i = cnt.length - 1; i >= 1; i--) {
+            boolean flag = false;
+            if(cnt[i] != null) {
+                for (int j = cnt[i].size() - 1; j >= 0; j--) {
+                    if(index >= k) {
+                        flag = true;
+                        break;
+                    }
+                    res[index++] = cnt[i].get(j);
+                }
+                if(flag) {
+                    break;
+                }
+            }
+        }
+        return res;
+    }
+    // test
+    public static void main(String[] args) {
+        Leetcode_347 leetcode_347 = new Leetcode_347();
+        int[] nums = {1,2};
+        int[] res = leetcode_347.topKFrequent_03(nums, 2);
+        for(int i = 0; i < res.length; i++) {
+            System.out.println(res[i]);
+        }
+    }
 }
