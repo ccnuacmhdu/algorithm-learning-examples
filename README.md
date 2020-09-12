@@ -66,3 +66,4 @@ com.example.leetcode.Leetcode_40
 com.example.leetcode.Leetcode_216
 ### 637 二叉树的层平均值
 com.example.leetcode.Leetcode_637
+### LCP 19 秋叶收藏集
