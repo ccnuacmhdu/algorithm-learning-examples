@@ -72,3 +72,5 @@ com.example.leetcode.Leetcode_LCP_19
 com.example.leetcode.Leetcode_79
 ### LCP 20 快速公交
 com.example.leetcode.Leetcode_LCP_20
+### 37 解数独
+com.example.leetcode.Leetcode_37
