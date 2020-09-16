@@ -76,3 +76,5 @@ com.example.leetcode.Leetcode_LCP_20
 com.example.leetcode.Leetcode_37
 ### 226 翻转二叉树
 com.example.leetcode.Leetcode_226
+### LCP 21 追逐游戏
+com.example.leetcode.Leetcode_LCP_21
