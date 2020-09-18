@@ -78,3 +78,5 @@ com.example.leetcode.Leetcode_37
 com.example.leetcode.Leetcode_226
 ### LCP 21 追逐游戏
 com.example.leetcode.Leetcode_LCP_21
+### 47 全排列 II
+com.example.leetcode.Leetcode_47

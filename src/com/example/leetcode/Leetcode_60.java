@@ -164,7 +164,7 @@ public class Leetcode_60 {
     public static void main(String[] args) {
         Leetcode_60 leetcode_60 = new Leetcode_60();
         for(int i = 1; i <= 24; i++) {
-            System.out.println(leetcode_60.getPermutation_03(4, i));
+            System.out.println(leetcode_60.getPermutation_01(4, i));
         }
     }
 }
