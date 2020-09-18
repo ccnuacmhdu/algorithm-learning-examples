@@ -80,3 +80,5 @@ com.example.leetcode.Leetcode_226
 com.example.leetcode.Leetcode_LCP_21
 ### 47 全排列 II
 com.example.leetcode.Leetcode_47
+### 404 左叶子之和
+com.example.leetcode.Leetcode_404
