@@ -92,3 +92,5 @@ com.example.leetcode.Leetcode_5505
 com.example.leetcode.Leetcode_5521
 ### 5520 拆分字符串使唯一子字符串的数目最大
 com.example.leetcode.Leetcode_5520
+### 538 把二叉搜索树转换为累加树
+com.example.leetcode.Leetcode_538
