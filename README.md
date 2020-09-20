@@ -86,3 +86,5 @@ com.example.leetcode.Leetcode_404
 com.example.leetcode.Leetcode_685
 ### 78 子集
 com.example.leetcode.Leetcode_78
+### 5505 所有排列中的最大和
+com.example.leetcode.Leetcode_5505
