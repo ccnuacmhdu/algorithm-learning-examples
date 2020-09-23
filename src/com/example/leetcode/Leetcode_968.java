@@ -27,8 +27,7 @@ public class Leetcode_968 {
      * 递归，左右孩子返回最小值，再看看父亲是否安装来决定是否加 1，其实就是最后返回的 min(a, b)
      *
      * 对于情况 1，父亲安装了摄像头，两个孩子必定都能被监控到，所以孩子们取三种情况最小值即可
-     * 对于情况 2，父亲没安装摄像头，要保证被监控到，并且为了最终取最小摄像头数，那么孩子中必
-     *           定有一个安装了摄像头，且要保证另一个孩子必须被监控到
+     * 对于情况 2，父亲没安装摄像头，要保证被监控到，那么孩子中至少有一个安装了摄像头，且要保证另一个孩子被监控到
      * 对于情况 3，父亲没安装摄像头，也要保证不被监控到，那么孩子们必须不安装摄像头且被监控到
      *
      * 边界处理，当是空树怎么办？遇到叶子节点递归回退返回什么？可以考虑只有一个节点的树，该节点
@@ -47,15 +46,17 @@ public class Leetcode_968 {
     }
     private ReturnType process(TreeNode root) {
         if(root == null) {
-            // 由于有相加的情况，不能超过 int 最大值，故除以 2
-            return new ReturnType(Integer.MAX_VALUE/2, 0, Integer.MAX_VALUE/2);
+            // 由于有 a+a, a+b 的情况，故为了不超过 int 最大值，进行除以 2 处理。
+            // 考虑递归回退出口及空树及单节点树，c 初始值只要满足 c >= min(a,b) 即可，
+            // 不让 c 起作用，取得 min(a,b)，而 root=null 时，保证 min(a,b)=0，
+            // 考虑单节点树，若 a=0, b=MAX/2，从左右空孩子返回 (1,0,MAX)，得到 min(a,b)=0，错误
+            // 而 a=MAX/2,b=0，从左右孩子返回 (1,MAX/2,0)，min(a,b)=1，正确。推知下面这行代码
+            return new ReturnType(Integer.MAX_VALUE/2, 0, 0);
         }
         ReturnType left = process(root.left);
         ReturnType right = process(root.right);
-        // 最终取得的是 min(a,b)，下面式子中要避免掉 a,c 的影响，故 root=null 时 a,c 赋值为 Integer.MAX_VALUE/2
-        // 又由于 root=null 时应返回 0，故 root=null 时，b=0
         int a = Math.min(left.c, Math.min(left.a, left.b)) + Math.min(right.c, Math.min(right.a, right.b)) + 1;
-        int b = Math.min(left.a + Math.min(right.a, right.b), right.a + Math.min(left.a, left.b));
+        int b = Math.min(left.a + right.a, Math.min(left.a + right.b, left.b + right.a));
         int c = left.b + right.b;
         return new ReturnType(a, b, c);
     }
