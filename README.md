@@ -100,6 +100,7 @@ com.example.leetcode.Leetcode_968
 com.example.leetcode.Leetcode_617
 ### 501 二叉搜索树中的众数
 com.example.leetcode.Leetcode_501
+### 106 从中序与后序遍历序列构造二叉树
 
 # 《程序员代码面试指南》学习篇
 特别说明，本部分是笔者学习左程云著作《程序员代码面试指南》的笔记，并使用[牛客网独家OJ刷题](https://www.nowcoder.com/ta/programmer-code-interview-guide)
