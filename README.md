@@ -112,4 +112,6 @@ com.example.leetcode.Leetcode_235
 ## 第 1 章 栈和队列
 #### 设计一个有 getMin 功能的栈
 com.example.programmerCodeInterviewGuide.chapter01.Code_01
+#### 由两个栈组成的队列
+com.example.programmerCodeInterviewGuide.chapter01.Code_02
 
