@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * 【由两个栈组成的队列】
  */
-public class Code_02 {
+public class Code_01_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MyQueue que = new MyQueue();

@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * 【设计一个有 getMin 功能的栈】
  */
-public class Code_01 {
+public class Code_01_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MyStack2 myStack2 = new MyStack2();
