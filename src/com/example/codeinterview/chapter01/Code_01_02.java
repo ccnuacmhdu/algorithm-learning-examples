@@ -1,4 +1,4 @@
-package com.example.programmerCodeInterviewGuide.chapter01;
+package com.example.codeinterview.chapter01;
 
 import java.util.Scanner;
 import java.util.Stack;
