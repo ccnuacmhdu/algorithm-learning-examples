@@ -122,3 +122,5 @@ com.example.codeinterview.chapter01.Code_01_03
 com.example.codeinterview.chapter01.Code_01_04
 #### 用一个栈实现另一个栈的排序
 com.example.codeinterview.chapter01.Code_01_05
+#### 用栈来求解汉诺塔问题
+com.example.codeinterview.chapter01.Code_01_06
