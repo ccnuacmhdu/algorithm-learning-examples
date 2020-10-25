@@ -134,3 +134,5 @@ com.example.codeinterview.chapter01.Code_01_06
 com.example.codeinterview.chapter01.Code_01_07
 #### 单调栈结构
 com.example.codeinterview.chapter01.Code_01_08
+#### 求最大子矩阵的大小
+com.example.codeinterview.chapter01.Code_01_09
