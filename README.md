@@ -33,7 +33,8 @@ com.example.greedy.GreedyExample05
 
 ## 4 跳表
 com.example.skipList.SkipList <br />
-[跳表图解](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/skiplist.png)
+跳表图解
+![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/skiplist.png)
 
 
 
@@ -41,7 +42,8 @@ com.example.skipList.SkipList <br />
 # 剑指 Offer
 ### 表示数值的字符串
 com.example.offer.OfferProblem01 <br />
-[表示数值的自动机图解（图片来自 Leetcode 中国站点）](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%87%AA%E5%8A%A8%E6%9C%BA.png)
+表示数值的自动机图解（图片来自 Leetcode 中国站点）
+![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%87%AA%E5%8A%A8%E6%9C%BA.png)
 
 
 
