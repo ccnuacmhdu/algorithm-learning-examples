@@ -126,3 +126,5 @@ com.example.codeinterview.chapter01.Code_01_05
 com.example.codeinterview.chapter01.Code_01_06
 #### 生成窗口最大值数组
 com.example.codeinterview.chapter01.Code_01_07
+#### 单调栈结构
+com.example.codeinterview.chapter01.Code_01_08
