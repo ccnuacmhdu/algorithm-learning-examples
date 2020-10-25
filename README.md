@@ -1,7 +1,8 @@
 # algorithm-learning-examples
 # 算法学习篇
 ## 1 排序
-[快速排序思路过程详细图解](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/quickSort.png)   
+快速排序思路过程详细图解
+![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/quickSort.png)   
 [各种排序复杂度稳定性比较](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/ComplexityAndStabilityOfVariousSorts.png)
 #### 1.1 常见排序汇总
 com.example.sort.Sort
@@ -109,8 +110,10 @@ com.example.leetcode.Leetcode_235
 ### 117 填充每个节点的下一个右侧节点指针 II
 com.example.leetcode.Leetcode_117
 
-# 《程序员代码面试指南》学习篇
+# 《程序员代码面试指南（第2版）》学习篇
 特别说明，本部分是笔者学习左程云著作《程序员代码面试指南》的笔记，并使用[牛客网独家OJ刷题](https://www.nowcoder.com/ta/programmer-code-interview-guide)
+## 学习本书方法思考
+个人觉得这本书非常好，是最好的面试刷题资料，但缺点是文字叙述太多，没有对应的视频讲解，导致刷题速度很慢，对此可以搜网上帖子，辅助快速理解。
 ## 第 1 章 栈和队列
 #### 设计一个有 getMin 功能的栈
 com.example.codeinterview.chapter01.Code_01_01
