@@ -146,3 +146,5 @@ com.example.codeinterview.chapter01.Code_01_10
 ## 第 2 章 链表问题
 #### 打印两个有序链表的公共部分
 com.example.codeinterview.chapter02.Code_02_01
+#### 在单链表和双链表中删除倒数第 K 个节点
+com.example.codeinterview.chapter02.Code_02_02
