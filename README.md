@@ -116,7 +116,9 @@ com.example.leetcode.Leetcode_117
 # 《程序员代码面试指南（第2版）》学习篇
 特别说明，本部分是笔者学习左程云著作《程序员代码面试指南》的笔记，并使用[牛客网独家OJ刷题](https://www.nowcoder.com/ta/programmer-code-interview-guide)
 ## 学习本书方法思考
-个人觉得这本书非常好，是最好的面试刷题资料，但缺点是文字叙述太多，没有对应的视频讲解，导致刷题速度很慢，对此可以搜网上帖子，辅助快速理解。
+- 个人觉得这本书非常好，是最好的面试刷题资料
+- 本书缺点是文字叙述太多，文字缺乏直观性，没有视频，理解费时，可以搜网上帖子帮助理解
+- 可以适当跳过一些过难的题，节约刷题时间
 ## 第 1 章 栈和队列
 #### 设计一个有 getMin 功能的栈
 com.example.codeinterview.chapter01.Code_01_01
@@ -136,3 +138,7 @@ com.example.codeinterview.chapter01.Code_01_07
 com.example.codeinterview.chapter01.Code_01_08
 #### 求最大子矩阵的大小
 com.example.codeinterview.chapter01.Code_01_09
+#### 最大值减去最小值小于或等于 num 的子数组数量
+com.example.codeinterview.chapter01.Code_01_10
+#### 可见的山峰对数量
+暂略
