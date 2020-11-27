@@ -2,9 +2,9 @@
 # 算法学习篇
 ## 1 排序
 快速排序思路过程详细图解
-![Image text](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/quickSort.png)   
+![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/quickSort.png)   
 各种排序复杂度稳定性比较
-![Image text](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/ComplexityAndStabilityOfVariousSorts.png)
+![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/ComplexityAndStabilityOfVariousSorts.png)
 #### 1.1 常见排序汇总
 com.example.sort.Sort
 #### 1.2 小和问题
