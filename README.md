@@ -150,3 +150,5 @@ com.example.codeinterview.chapter02.Code_02_01
 com.example.codeinterview.chapter02.Code_02_02
 #### 在单链表和双链表中删除第 K 个节点
 com.example.codeinterview.chapter02.Code_02_03
+#### 反转单向和双向链表
+com.example.codeinterview.chapter02.Code_02_04
