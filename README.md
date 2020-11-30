@@ -2,9 +2,9 @@
 # 算法学习篇
 ## 1 排序
 快速排序思路过程详细图解
-![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/quickSort.png)   
-各种排序复杂度稳定性比较
-![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/ComplexityAndStabilityOfVariousSorts.png)
+![快速排序思路过程详细图解](./pictures/quickSort.png)   
+各种排序复杂度稳定性比较<br>
+![各种排序复杂度稳定性比较](./pictures/ComplexityAndStabilityOfVariousSorts.png)
 #### 1.1 常见排序汇总
 com.example.sort.Sort
 #### 1.2 小和问题
@@ -34,7 +34,7 @@ com.example.greedy.GreedyExample05
 ## 4 跳表
 com.example.skipList.SkipList <br />
 跳表图解
-![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/skiplist.png)
+![跳表图解](./pictures/skiplist.png)
 
 
 
@@ -43,7 +43,7 @@ com.example.skipList.SkipList <br />
 ### 表示数值的字符串
 com.example.offer.OfferProblem01 <br />
 表示数值的自动机图解（图片来自 Leetcode 中国站点）
-![image](https://github.com/ccnuacmhdu/algorithm-learning-examples/blob/master/pictures/%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%87%AA%E5%8A%A8%E6%9C%BA.png)
+![表示数值的自动机图解](./pictures/%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%87%AA%E5%8A%A8%E6%9C%BA.png)
 
 
 
