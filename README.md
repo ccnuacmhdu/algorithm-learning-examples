@@ -152,3 +152,5 @@ com.example.codeinterview.chapter02.Code_02_02
 com.example.codeinterview.chapter02.Code_02_03
 #### 反转单向和双向链表
 com.example.codeinterview.chapter02.Code_02_04
+#### 反转部分单向链表
+com.example.codeinterview.chapter02.Code_02_05
