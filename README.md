@@ -156,3 +156,5 @@ com.example.codeinterview.chapter02.Code_02_04
 com.example.codeinterview.chapter02.Code_02_05
 #### 环形单链表的约瑟夫问题
 com.example.codeinterview.chapter02.Code_02_06
+#### 判断一个链表是否为回文结构
+com.example.codeinterview.chapter02.Code_02_07
