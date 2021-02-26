@@ -154,3 +154,5 @@ com.example.codeinterview.chapter02.Code_02_03
 com.example.codeinterview.chapter02.Code_02_04
 #### 反转部分单向链表
 com.example.codeinterview.chapter02.Code_02_05
+#### 环形单链表的约瑟夫问题
+com.example.codeinterview.chapter02.Code_02_06

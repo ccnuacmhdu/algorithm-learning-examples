@@ -2,9 +2,6 @@ package com.example.codeinterview.chapter02;
 
 import java.util.Scanner;
 
-/**
- * 在单链表和双链表中删除倒数第 K 个节点
- */
 public class Code_02_02 {
     private static class Node {
         public int value;

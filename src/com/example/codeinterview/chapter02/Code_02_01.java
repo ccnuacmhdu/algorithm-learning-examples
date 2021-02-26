@@ -2,9 +2,6 @@ package com.example.codeinterview.chapter02;
 
 import java.util.Scanner;
 
-/**
- * 打印两个有序链表的公共部分
- */
 public class Code_02_01 {
     private static class Node {
         public int value;
