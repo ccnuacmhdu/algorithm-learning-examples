@@ -158,3 +158,5 @@ com.example.codeinterview.chapter02.Code_02_05
 com.example.codeinterview.chapter02.Code_02_06
 #### 判断一个链表是否为回文结构
 com.example.codeinterview.chapter02.Code_02_07
+#### 将单向链表按某值划分成左边小、中间相等、右边大的形式
+com.example.codeinterview.chapter02.Code_02_08
