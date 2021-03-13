@@ -176,3 +176,5 @@ com.example.codeinterview.chapter02.Code_02_14
 com.example.codeinterview.chapter02.Code_02_15
 #### 单链表的选择排序
 com.example.codeinterview.chapter02.Code_02_16
+#### 一种怪异的节点删除方式
+com.example.codeinterview.chapter02.Code_02_17
