@@ -179,3 +179,5 @@ com.example.codeinterview.chapter02.Code_02_15
 com.example.codeinterview.chapter02.Code_02_16
 #### 一种怪异的节点删除方式
 com.example.codeinterview.chapter02.Code_02_17
+#### 向有序的环形单链表中插入新节点
+com.example.codeinterview.chapter02.Code_02_18
