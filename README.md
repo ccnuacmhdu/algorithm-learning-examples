@@ -119,6 +119,7 @@ com.example.leetcode.Leetcode_117
 - 个人觉得这本书非常好，是最好的面试刷题资料
 - 本书缺点是文字叙述太多，文字缺乏直观性，没有视频，理解费时，可以搜网上帖子帮助理解
 - 可以适当跳过一些过难的题，节约刷题时间
+- 结合Leetcode题解，特别是评论区热心网友的贴心代码注释+解释
 ## 第 1 章 栈和队列
 #### 设计一个有 getMin 功能的栈
 com.example.codeinterview.chapter01.Code_01_01
