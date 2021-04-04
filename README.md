@@ -194,3 +194,5 @@ com.example.codeinterview.chapter03.Code_03_01
 com.example.codeinterview.chapter03.Code_03_02
 #### 如何较为直观地打印二叉树
 com.example.codeinterview.chapter03.Code_03_03
+#### 二叉树的序列化和反序列化
+com.example.codeinterview.chapter03.Code_03_04
