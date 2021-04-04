@@ -27,6 +27,7 @@ public class Code_03_02 {
         }
         Node tree = createBinaryTree(root, infos);
         printEdge1(tree);
+        printEdge2(tree);
     }
 
     /**
@@ -53,8 +54,6 @@ public class Code_03_02 {
                 System.out.print(mark[i][1] + " ");
             }
         }
-        System.out.println();
-        printEdge2(root);
         System.out.println();
     }
     private static int getHeight(Node root) {
