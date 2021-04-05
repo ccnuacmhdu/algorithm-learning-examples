@@ -1,4 +1,4 @@
-package com.example.binarySearch;
+package com.example.binarysearch;
 
 /**
  * 局部最小值问题（一数组中，任意两个相邻的数都不一样，找到一个局部最小值。）

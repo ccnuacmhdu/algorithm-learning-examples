@@ -1,4 +1,4 @@
-package com.example.binarySearch;
+package com.example.binarysearch;
 
 /**
  * 查找有序数组（以升序为例）中大于等于某数的最小下标

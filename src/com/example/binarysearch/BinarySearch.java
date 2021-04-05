@@ -1,4 +1,4 @@
-package com.example.binarySearch;
+package com.example.binarysearch;
 
 public class BinarySearch {
     public static int binarySearch(int[] a, int v) {

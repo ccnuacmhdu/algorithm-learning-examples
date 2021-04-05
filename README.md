@@ -196,3 +196,5 @@ com.example.codeinterview.chapter03.Code_03_02
 com.example.codeinterview.chapter03.Code_03_03
 #### 二叉树的序列化和反序列化
 com.example.codeinterview.chapter03.Code_03_04
+#### 在二叉树中找到累加和为指定值的最长路径长度
+com.example.codeinterview.chapter03.Code_03_05
