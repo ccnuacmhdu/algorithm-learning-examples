@@ -198,3 +198,5 @@ com.example.codeinterview.chapter03.Code_03_03
 com.example.codeinterview.chapter03.Code_03_04
 #### 在二叉树中找到累加和为指定值的最长路径长度
 com.example.codeinterview.chapter03.Code_03_05
+#### 找到二叉树中的最大搜索二叉子树
+com.example.codeinterview.chapter03.Code_03_06
