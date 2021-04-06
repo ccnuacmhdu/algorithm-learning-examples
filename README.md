@@ -202,3 +202,5 @@ com.example.codeinterview.chapter03.Code_03_05
 com.example.codeinterview.chapter03.Code_03_06
 #### 二叉树的按层打印与 ZigZag 打印
 com.example.codeinterview.chapter03.Code_03_07
+#### 调整搜索二叉树中两个错误的节点
+com.example.codeinterview.chapter03.Code_03_08
