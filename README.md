@@ -205,3 +205,5 @@ com.example.codeinterview.chapter03.Code_03_07
 com.example.codeinterview.chapter03.Code_03_08
 #### 判断 t1 树是否包含 t2 树全部的拓扑结构
 com.example.codeinterview.chapter03.Code_03_09
+#### 判断二叉树是否为平衡二叉树
+com.example.codeinterview.chapter03.Code_03_10
