@@ -207,3 +207,5 @@ com.example.codeinterview.chapter03.Code_03_08
 com.example.codeinterview.chapter03.Code_03_09
 #### 判断二叉树是否为平衡二叉树
 com.example.codeinterview.chapter03.Code_03_10
+#### 根据后序数组重建搜索二叉树
+com.example.codeinterview.chapter03.Code_03_11
