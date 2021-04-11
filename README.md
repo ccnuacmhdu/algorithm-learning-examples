@@ -219,3 +219,5 @@ com.example.codeinterview.chapter03.Code_03_14
 com.example.codeinterview.chapter03.Code_03_15
 #### 二叉树节点间的最大距离问题
 com.example.codeinterview.chapter03.Code_03_16
+#### 派对的最大快乐值
+com.example.codeinterview.chapter03.Code_03_17
