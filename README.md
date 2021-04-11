@@ -210,3 +210,8 @@ com.example.codeinterview.chapter03.Code_03_10
 #### 根据后序数组重建搜索二叉树
 com.example.codeinterview.chapter03.Code_03_11
 #### 判断一棵二叉树是否为搜索二叉树和完全二叉树
+com.example.codeinterview.chapter03.Code_03_12
+#### 通过有序数组生成平衡搜索二叉树
+com.example.codeinterview.chapter03.Code_03_13
+#### 在二叉树中找到一个节点的后继节点
+com.example.codeinterview.chapter03.Code_03_14
