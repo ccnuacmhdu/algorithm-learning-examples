@@ -225,3 +225,5 @@ com.example.codeinterview.chapter03.Code_03_17
 com.example.codeinterview.chapter03.Code_03_18
 #### 统计和生成所有不同的二叉树
 com.example.codeinterview.chapter03.Code_03_19
+#### 统计完全二叉树的节点数
+com.example.codeinterview.chapter03.Code_03_20
