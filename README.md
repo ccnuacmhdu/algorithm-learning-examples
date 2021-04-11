@@ -221,3 +221,5 @@ com.example.codeinterview.chapter03.Code_03_15
 com.example.codeinterview.chapter03.Code_03_16
 #### 派对的最大快乐值
 com.example.codeinterview.chapter03.Code_03_17
+#### 通过先序和中序数组生成后序数组
+com.example.codeinterview.chapter03.Code_03_18
