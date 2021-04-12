@@ -229,3 +229,7 @@ com.example.codeinterview.chapter03.Code_03_19
 com.example.codeinterview.chapter03.Code_03_20
 
 ## 第 4 章 递归和动态规划
+#### 斐波那契数列问题的递归和动态规划
+com.example.codeinterview.chapter04.Code_04_01
+#### 矩阵的最小路径和
+com.example.codeinterview.chapter04.Code_04_02
