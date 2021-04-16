@@ -2,9 +2,7 @@ package com.example;
 
 public class Test {
     public static void main(String[] args) {
-        int[] nums = {4,5,6,7,0,1,2};
-        int res = findMin(nums);
-        System.out.println(res);
+        int[] nums = {1, 2, 3, 5};
     }
 
     public static int findMin(int[] nums) {
