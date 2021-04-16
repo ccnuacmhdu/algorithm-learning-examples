@@ -235,3 +235,5 @@ com.example.codeinterview.chapter04.Code_04_01
 com.example.codeinterview.chapter04.Code_04_02
 #### 换钱的最少货币数
 com.example.codeinterview.chapter04.Code_04_03
+#### 机器人达到指定位置方法数
+com.example.codeinterview.chapter04.Code_04_04
