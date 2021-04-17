@@ -239,3 +239,5 @@ com.example.codeinterview.chapter04.Code_04_03
 com.example.codeinterview.chapter04.Code_04_04
 #### 换钱的方法数
 com.example.codeinterview.chapter04.Code_04_05
+#### 最长递增子序列
+com.example.codeinterview.chapter04.Code_04_06
