@@ -243,3 +243,5 @@ com.example.codeinterview.chapter04.Code_04_05
 com.example.codeinterview.chapter04.Code_04_06
 #### 汉诺塔问题
 com.example.codeinterview.chapter04.Code_04_07
+#### 最长公共子序列
+com.example.codeinterview.chapter04.Code_04_08
