@@ -249,3 +249,5 @@ com.example.codeinterview.chapter04.Code_04_08
 com.example.codeinterview.chapter04.Code_04_09
 #### 龙与地下城游戏问题
 com.example.codeinterview.chapter04.Code_04_10
+#### 数字字符串转换为字母组合的种数
+com.example.codeinterview.chapter04.Code_04_11
