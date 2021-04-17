@@ -245,3 +245,5 @@ com.example.codeinterview.chapter04.Code_04_06
 com.example.codeinterview.chapter04.Code_04_07
 #### 最长公共子序列
 com.example.codeinterview.chapter04.Code_04_08
+#### 最长公共子串问题
+com.example.codeinterview.chapter04.Code_04_09

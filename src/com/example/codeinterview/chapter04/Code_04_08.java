@@ -1,9 +1,11 @@
 package com.example.codeinterview.chapter04;
 
-// [leetcode] 1143. 最长公共子序列
-public class Code_04_08 {
 
-    public int longestCommonSubsequence(String text1, String text2) {
+import java.util.Scanner;
+
+public class Code_04_08 {
+    // [leetcode] 1143. 最长公共子序列
+    /*public int longestCommonSubsequence(String text1, String text2) {
         int len1 = text1.length();
         int len2 = text2.length();
         int[][] dp = new int[len1][len2];
@@ -25,20 +27,29 @@ public class Code_04_08 {
             }
         }
         return dp[len1-1][len2-1];
+    }*/
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s1 = scanner.next();
+        String s2 = scanner.next();
+        String res = getLongestCommonSubsequence(s1, s2);
+        System.out.println(res);
     }
-
     // 得到最长公共子序列字符串
-    /*public static String getLongestCommonSubsequence(String text1, String text2) {
+    public static String getLongestCommonSubsequence(String text1, String text2) {
         if(text1 == null || text1.length() == 0 || text2 == null || text2.length() == 0) {
-            return "";
+            return "-1";
         }
-
         char[] chs1 = text1.toCharArray();
         char[] chs2 = text2.toCharArray();
         int m = chs1.length - 1;
         int n = chs2.length - 1;
-
         int[][] dp = LCS(text1, text2);
+        if(dp[m][n] == 0) {
+            return "-1";
+        }
         char[] res = new char[dp[m][n]];
         int index = dp[m][n] - 1;
         while (index >= 0) {
@@ -76,5 +87,5 @@ public class Code_04_08 {
             }
         }
         return dp;
-    }*/
+    }
 }
