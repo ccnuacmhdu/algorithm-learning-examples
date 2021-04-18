@@ -253,3 +253,5 @@ com.example.codeinterview.chapter04.Code_04_10
 com.example.codeinterview.chapter04.Code_04_11
 #### 排成一条线的纸牌博弈问题
 com.example.codeinterview.chapter04.Code_04_12
+#### 跳跃游戏
+com.example.codeinterview.chapter04.Code_04_13
