@@ -255,3 +255,5 @@ com.example.codeinterview.chapter04.Code_04_11
 com.example.codeinterview.chapter04.Code_04_12
 #### 跳跃游戏
 com.example.codeinterview.chapter04.Code_04_13
+#### N 皇后问题
+com.example.codeinterview.chapter04.Code_04_14
