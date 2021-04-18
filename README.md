@@ -261,3 +261,5 @@ com.example.codeinterview.chapter04.Code_04_14
 ## 第 5 章 字符串问题
 #### 判断两个字符串是否互为变形词
 com.example.codeinterview.chapter05.Code_05_01
+#### 判断两个字符串是否互为旋转词
+com.example.codeinterview.chapter05.Code_05_02
