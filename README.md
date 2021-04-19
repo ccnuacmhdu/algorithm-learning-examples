@@ -263,3 +263,5 @@ com.example.codeinterview.chapter04.Code_04_14
 com.example.codeinterview.chapter05.Code_05_01
 #### 判断两个字符串是否互为旋转词
 com.example.codeinterview.chapter05.Code_05_02
+#### 将整数字符串转成整数值
+com.example.codeinterview.chapter05.Code_05_03

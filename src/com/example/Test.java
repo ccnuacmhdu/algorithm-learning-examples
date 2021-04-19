@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-
+        long x = (2L << 30);
+        System.out.println(x);
     }
 
     public static int findMin(int[] nums) {
