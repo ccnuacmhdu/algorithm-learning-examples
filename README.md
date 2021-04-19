@@ -265,3 +265,5 @@ com.example.codeinterview.chapter05.Code_05_01
 com.example.codeinterview.chapter05.Code_05_02
 #### 将整数字符串转成整数值
 com.example.codeinterview.chapter05.Code_05_03
+#### 删除多余字符得到字典序最小的字符串
+com.example.codeinterview.chapter05.Code_05_04
