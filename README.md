@@ -269,3 +269,5 @@ com.example.codeinterview.chapter05.Code_05_03
 com.example.codeinterview.chapter05.Code_05_04
 #### 数组中两个字符串的最小距离
 com.example.codeinterview.chapter05.Code_05_05
+#### 字符串的转换路径问题
+com.example.codeinterview.chapter05.Code_05_06
