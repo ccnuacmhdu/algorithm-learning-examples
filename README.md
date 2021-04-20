@@ -267,3 +267,5 @@ com.example.codeinterview.chapter05.Code_05_02
 com.example.codeinterview.chapter05.Code_05_03
 #### 删除多余字符得到字典序最小的字符串
 com.example.codeinterview.chapter05.Code_05_04
+#### 数组中两个字符串的最小距离
+com.example.codeinterview.chapter05.Code_05_05
