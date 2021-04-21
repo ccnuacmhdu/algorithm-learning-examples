@@ -271,3 +271,5 @@ com.example.codeinterview.chapter05.Code_05_04
 com.example.codeinterview.chapter05.Code_05_05
 #### 字符串的转换路径问题
 com.example.codeinterview.chapter05.Code_05_06
+#### 找到字符串的最长无重复字符子串
+com.example.codeinterview.chapter05.Code_05_07
