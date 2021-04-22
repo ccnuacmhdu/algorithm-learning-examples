@@ -4,8 +4,17 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        long x = (2L << 30);
-        System.out.println(x);
+        int a = 3;
+        int b = 6;
+//        a = a - b;
+//        b = a + b;
+//        a = b - a;
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+
+        System.out.println("a="+a);
+        System.out.println("b="+b);
     }
 
     public static int findMin(int[] nums) {
