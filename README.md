@@ -119,6 +119,7 @@ com.example.leetcode.Leetcode_117
 - 本书缺点是文字叙述太多，文字缺乏直观性，没有视频，理解费时，可以搜网上帖子帮助理解
 - 可以适当跳过一些过难的题，节约刷题时间
 - 结合Leetcode题解，特别是评论区热心网友的贴心代码注释+解释
+- 刷到第八章，悟出一个道理，不一定要动手实现，学到清晰的思路可能更重要了
 
 ## 第 1 章 栈和队列
 #### 设计一个有 getMin 功能的栈
@@ -295,4 +296,6 @@ com.example.codeinterview.chapter07.Code_07_06
 ## 第 8 章 数组和矩阵问题
 #### 转圈打印矩阵
 com.example.codeinterview.chapter08.Code_08_01
+#### 需要排序的最短子数组长度
+com.example.codeinterview.chapter08.Code_08_02
 
