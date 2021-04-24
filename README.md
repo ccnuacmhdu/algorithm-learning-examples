@@ -287,5 +287,7 @@ com.example.codeinterview.chapter07.Code_07_02
 com.example.codeinterview.chapter07.Code_07_03
 #### 整数的二进制数表达中有多少个 1
 com.example.codeinterview.chapter07.Code_07_04
+#### 在其他数都出现偶数次的数组中找到出现奇数次的数
+com.example.codeinterview.chapter07.Code_07_05
 
 
