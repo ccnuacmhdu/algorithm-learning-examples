@@ -316,3 +316,5 @@ com.example.codeinterview.chapter08.Code_08_09
 com.example.codeinterview.chapter08.Code_08_10
 #### 求最短通路值
 com.example.codeinterview.chapter08.Code_08_11
+#### 分金条的最小花费
+com.example.codeinterview.chapter08.Code_08_12
