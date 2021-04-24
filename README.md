@@ -285,5 +285,7 @@ com.example.codeinterview.chapter07.Code_07_01
 com.example.codeinterview.chapter07.Code_07_02
 #### 只用位运算不用算术运算实现整数的加减乘除运算
 com.example.codeinterview.chapter07.Code_07_03
+#### 整数的二进制数表达中有多少个 1
+com.example.codeinterview.chapter07.Code_07_04
 
 
