@@ -289,5 +289,7 @@ com.example.codeinterview.chapter07.Code_07_03
 com.example.codeinterview.chapter07.Code_07_04
 #### 在其他数都出现偶数次的数组中找到出现奇数次的数
 com.example.codeinterview.chapter07.Code_07_05
+#### 在其他数都出现 k 次的数组中找到只出现一次的数
+com.example.codeinterview.chapter07.Code_07_06
 
 
