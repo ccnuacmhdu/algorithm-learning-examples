@@ -306,3 +306,5 @@ com.example.codeinterview.chapter08.Code_08_04
 com.example.codeinterview.chapter08.Code_08_05
 #### 未排序数组中累加和为给定值的最长子数组系列问题
 com.example.codeinterview.chapter08.Code_08_06
+#### 剑指 Offer 42. 连续子数组的最大和
+com.example.codeinterview.chapter08.Code_08_07
