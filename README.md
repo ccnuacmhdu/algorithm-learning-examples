@@ -302,3 +302,7 @@ com.example.codeinterview.chapter08.Code_08_02
 com.example.codeinterview.chapter08.Code_08_03
 #### 不重复打印排序数组中相加和为给定值的所有二元组和三元组
 com.example.codeinterview.chapter08.Code_08_04
+#### 未排序正数数组中累加和为给定值的最长子数组长度
+com.example.codeinterview.chapter08.Code_08_05
+#### 未排序数组中累加和为给定值的最长子数组系列问题
+com.example.codeinterview.chapter08.Code_08_06
