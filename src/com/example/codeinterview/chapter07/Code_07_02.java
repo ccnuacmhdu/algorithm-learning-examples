@@ -15,7 +15,7 @@ public class Code_07_02 {
     }
 
     /**
-     * 解决 getMax1 有可能溢出的问题
+     * 解决 getMax1 有可能溢出的问题（作者的代码不易理解）
      *
      * 如果 a 的符号与 b 的符号不同（difSab==1，sameSab==0），则有：
      *   如果 a 为 0 或正，那么 b 为负（sa==1，sb==0），应该返回 a；
@@ -41,5 +41,21 @@ public class Code_07_02 {
         int returnA = difSab * sa + sameSab * sc;
         int returnB = flip(returnA);
         return a * returnA + b * returnB;
+    }
+
+    // [leetcode] 面试题 16.07. 最大数值（易于理解，但用了if、==）
+    public int maximum(int a, int b) {
+        int signA = sign(a);
+        int signB = sign(b);
+        // a,b 符号相同，不可能溢出
+        if(signA == signB) {
+            return sign(a-b) == 0 ? a : b;
+        }
+        // a,b 符号不同，选择大于等于 0 的就可
+        if(signA == 0) {
+            return a;
+        }
+        return b;
+
     }
 }
