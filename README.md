@@ -308,3 +308,7 @@ com.example.codeinterview.chapter08.Code_08_05
 com.example.codeinterview.chapter08.Code_08_06
 #### 剑指 Offer 42. 连续子数组的最大和
 com.example.codeinterview.chapter08.Code_08_07
+#### 在数组中找到一个局部最小的位置
+com.example.codeinterview.chapter08.Code_08_08
+#### 数组中子数组的最大累乘积
+com.example.codeinterview.chapter08.Code_08_09
