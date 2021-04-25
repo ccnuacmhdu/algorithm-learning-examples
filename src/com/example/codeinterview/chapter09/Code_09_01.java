@@ -1,4 +1,4 @@
-package com.example.codeinterview;
+package com.example.codeinterview.chapter09;
 
 // [leetcode] 470. 用 Rand7() 实现 Rand10()
 public class Code_09_01 {

@@ -321,4 +321,7 @@ com.example.codeinterview.chapter08.Code_08_12
 
 ## 第 9 章 其他题目
 #### 从 5 随机到 7 随机及其扩展
-com.example.codeinterview.Code_09_01
+com.example.codeinterview.chapter09.Code_09_01
+#### 有关阶乘的两个问题
+com.example.codeinterview.chapter09.Code_09_02
+#### 折纸问题
