@@ -318,3 +318,7 @@ com.example.codeinterview.chapter08.Code_08_10
 com.example.codeinterview.chapter08.Code_08_11
 #### 分金条的最小花费
 com.example.codeinterview.chapter08.Code_08_12
+
+## 第 9 章 其他题目
+#### 从 5 随机到 7 随机及其扩展
+com.example.codeinterview.Code_09_01
