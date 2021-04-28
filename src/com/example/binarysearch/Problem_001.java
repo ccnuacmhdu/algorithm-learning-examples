@@ -20,7 +20,7 @@ package com.example.binarysearch;
  * 【测试样例】
  * 1000,900,600,300,900,1000 （局部最小为 300）
  */
-public class BinarySearchExample02 {
+public class Problem_001 {
     public static int binarySearchLocalMinimum(int[] a) {
         if(null == a || a.length <= 1) {
             return -1;

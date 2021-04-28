@@ -14,10 +14,11 @@ com.example.sort.ReversePairProblem
 
 ## 2 二分查找
 com.example.binarySearch.BinarySearch
-#### 2.1 查找有序数组大于等于某数的最左位置
-com.example.binarySearch.BinarySearchExample01
-#### 2.2 局部最小值问题
-com.example.binarySearch.BinarySearchExample02
+#### 2.1 局部最小值问题
+com.example.binarysearch.Problem_001
+#### 2.2 [leetcode] 1011. 在 D 天内送达包裹的能力
+com.example.binarysearch.Problem_002
+
 
 ## 3 贪心
 #### 3.1 字符串拼接问题
@@ -36,7 +37,9 @@ com.example.skipList.SkipList <br />
 跳表图解
 ![跳表图解](./pictures/skiplist.png)
 
-
+## 5 双指针
+#### 5.1 [leetcode] 633. 平方数之和
+com.example.twopointers.Problem_001
 
 
 # 剑指 Offer
