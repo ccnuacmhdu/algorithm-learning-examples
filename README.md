@@ -18,7 +18,8 @@ com.example.binarySearch.BinarySearch
 com.example.binarysearch.Problem_001
 #### 2.2 [leetcode] 1011. 在 D 天内送达包裹的能力
 com.example.binarysearch.Problem_002
-
+#### 2.3 [leetcode] 1482. 制作 m 束花所需的最少天数
+com.example.binarysearch.Problem_003
 
 ## 3 贪心
 #### 3.1 字符串拼接问题
