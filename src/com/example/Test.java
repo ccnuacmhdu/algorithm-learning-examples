@@ -1,54 +1,59 @@
 package com.example;
 
-import java.util.Arrays;
+import java.awt.datatransfer.FlavorListener;
+import java.sql.Struct;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Test {
     public static void main(String[] args) {
-        int a = 3;
-        int b = 6;
-//        a = a - b;
-//        b = a + b;
-//        a = b - a;
-        a = a ^ b;
-        b = a ^ b;
-        a = a ^ b;
-
-        System.out.println("a="+a);
-        System.out.println("b="+b);
-    }
-
-    public static int findMin(int[] nums) {
-
-        // 先举例观察
-        // 1 2 3 4 5
-        // 5 1 2 3 4
-        // 4 5 1 2 3
-        // 3 4 5 1 2
-        // 2 3 4 5 1
-
-        // 二分思路，和最右边数比较大小，判断最小的数在左边还是右边，决定二分往哪边走
-        int l = 0;
-        int r = nums.length - 1;
-        int mid;
-        int res = Integer.MAX_VALUE;
-        while(l <= r) {
-            mid = l + ((r - l) >> 1);
-            if(nums[mid] <= nums[r]) {
-                res = nums[mid] < res ? nums[mid] : res;
-                r = mid - 1;
-            } else {
-                l = mid + 1;
+        int[] arr = {1,2,3};
+        Solution solution = new Solution();
+        List<List<Integer>> res = solution.permute(arr);
+        for(int i = 0; i < res.size(); i++) {
+            for(int j = 0; j < res.get(i).size(); j++) {
+                System.out.print(res.get(i).get(j) + "\t");
             }
+            System.out.println();
         }
-        return res;
+
+        System.out.println("test");
+
+        System.out.println("test continue");
+    }
+}
 
 
-        // 常规思路
-        // for(int i = 1; i < nums.length; i++){
-        //     if(nums[i-1] > nums[i]){ // 若旋转过，必定出现此种情形
-        //         return nums[i];
-        //     }
-        // }
-        // return nums[0]; // 没旋转过
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
+
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> lists = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        process(nums, 0, list,lists);
+        return lists;
+    }
+    private void process(int[] nums, int st, List<Integer> list, List<List<Integer>> lists) {
+        if(st == nums.length) {
+            lists.add(new ArrayList<>(list));
+        }
+        for(int i = st; i < nums.length; i++) {
+            list.add(nums[i]);
+            swap(nums, st, i);
+            process(nums, st + 1, list, lists);
+            list.remove(list.size()-1);
+            swap(nums, st, i);
+        }
+    }
+    private void swap(int[] nums, int i, int j) {
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
     }
 }
