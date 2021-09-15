@@ -1,40 +1,20 @@
-package com.example;
+package com.example.leetcode100hot;
 
-import java.awt.datatransfer.FlavorListener;
-import java.sql.Struct;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+public class Leetcode_101 {
 
-public class Test {
-    public static void main(String[] args) {
-        int[] arr = {1,2,3};
-        Solution solution = new Solution();
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
-}
 
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-     this.val = val;
-     this.left = left;
-     this.right = right;
-    }
-}
-
-class Solution {
     /**
      * 一棵树是否是对称的，指的是左树和右树是否对称，取决于，
      * 1）左树根和右树根相等
@@ -59,4 +39,12 @@ class Solution {
         }
         return r1.val == r2.val && process(r1.left, r2.right) && process(r1.right, r2.left);
     }
+
+
+    public static void main(String[] args) {
+        Leetcode_101 leetcode_101 = new Leetcode_101();
+        boolean symmetric = leetcode_101.isSymmetric(null);
+        System.out.println(symmetric);
+    }
+
 }
