@@ -35,30 +35,18 @@ class TreeNode {
 }
 
 class Solution {
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> res = new ArrayList<>();
-        if(root == null) return res;
-        Map<TreeNode, Integer> high = new HashMap<>();
-        LinkedList<TreeNode> que = new LinkedList<>();
-        TreeNode t = null;
-        que.add(root);
-        high.put(root, 0);
-        while (!que.isEmpty()) {
-            t = que.poll();
-            int h = high.get(t);
-            if(h >= res.size()) {
-                res.add(new ArrayList<>());
-            }
-            res.get(h).add(t.val);
-            if(t.left != null) {
-                que.add(t.left);
-                high.put(t.left, h + 1);
-            }
-            if(t.right != null) {
-                que.add(t.right);
-                high.put(t.right, h + 1);
+    public int singleNumber(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for(int i = 0; i < nums.length; i++) {
+            if(set.contains(nums[i])) {
+                set.remove(nums[i]);
+            } else {
+                set.add(nums[i]);
             }
         }
-        return res;
+        for(Integer i: set) {
+            return i;
+        }
+        return 0;
     }
 }
