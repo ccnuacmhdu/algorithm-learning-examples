@@ -1,47 +1,9 @@
-package com.example;
+package com.example.leetcode100hot;
 
-import java.awt.datatransfer.FlavorListener;
-import java.sql.Struct;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
-public class Test {
-    public static void main(String[] args) {
-        String[] strs = new String[]{"bdddddddddd","bbbbbbbbbbc"};
-        Solution solution = new Solution();
-        List<List<String>> lists = solution.groupAnagrams(strs);
-        for(List<String> list: lists) {
-            for(String s: list) {
-                System.out.print(s + "\t");
-            }
-            System.out.println();
-        }
-    }
-}
-
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-     this.val = val;
-     this.left = left;
-     this.right = right;
-    }
-}
-
-class Solution {
+public class Leetcode_49 {
+    // 方法一：计数
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> res = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
@@ -68,6 +30,7 @@ class Solution {
         return sb.toString();
     }
 
+    // 方法二：排序
     public List<List<String>> groupAnagrams2(String[] strs) {
         List<List<String>> res = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
