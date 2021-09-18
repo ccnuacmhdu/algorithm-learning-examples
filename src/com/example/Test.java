@@ -9,13 +9,7 @@ public class Test {
     public static void main(String[] args) {
         String[] strs = new String[]{"bdddddddddd","bbbbbbbbbbc"};
         Solution solution = new Solution();
-        List<List<String>> lists = solution.groupAnagrams(strs);
-        for(List<String> list: lists) {
-            for(String s: list) {
-                System.out.print(s + "\t");
-            }
-            System.out.println();
-        }
+
     }
 }
 
@@ -42,46 +36,20 @@ class TreeNode {
 }
 
 class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        List<List<String>> res = new ArrayList<>();
-        Map<String, List<String>> map = new HashMap<>();
-        for(int i = 0; i < strs.length; i++) {
-            String k = process(strs[i]);
-            List<String> list = map.getOrDefault(k, new ArrayList<>());
-            list.add(strs[i]);
-            map.put(k, list);
+    public void flatten(TreeNode root) {
+        if(root == null) return;
+        List<TreeNode> list = new ArrayList<>();
+        process(root, list);
+        for(int i = 1; i < list.size(); i++) {
+            list.get(i - 1).right = list.get(i);
+            list.get(i - 1).left = null;
         }
-        for(Map.Entry<String, List<String>> entry: map.entrySet()) {
-            res.add(entry.getValue());
-        }
-        return res;
     }
-    private String process(String s) {
-        int[] cnt = new int[26];
-        for(int i = 0; i < s.length(); i++) {
-            cnt[s.charAt(i) - 'a']++;
+    private void process(TreeNode root, List<TreeNode> list) {
+        if(root != null) {
+            list.add(root);
+            process(root.left, list);
+            process(root.right, list);
         }
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < 26; i++) {
-            sb.append(cnt[i]).append("-");
-        }
-        return sb.toString();
-    }
-
-    public List<List<String>> groupAnagrams2(String[] strs) {
-        List<List<String>> res = new ArrayList<>();
-        Map<String, List<String>> map = new HashMap<>();
-        for(int i = 0; i < strs.length; i++) {
-            char[] cs = strs[i].toCharArray();
-            Arrays.sort(cs);
-            String k = new String(cs);
-            List<String> list = map.getOrDefault(k, new ArrayList<>());
-            list.add(strs[i]);
-            map.put(k, list);
-        }
-        for(Map.Entry<String, List<String>> entry: map.entrySet()) {
-            res.add(entry.getValue());
-        }
-        return res;
     }
 }
