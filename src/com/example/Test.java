@@ -36,20 +36,25 @@ class TreeNode {
 }
 
 class Solution {
-    public void flatten(TreeNode root) {
-        if(root == null) return;
-        List<TreeNode> list = new ArrayList<>();
-        process(root, list);
-        for(int i = 1; i < list.size(); i++) {
-            list.get(i - 1).right = list.get(i);
-            list.get(i - 1).left = null;
+    public int longestConsecutive(int[] nums) {
+        if(nums.length < 2) {
+            return nums.length;
         }
-    }
-    private void process(TreeNode root, List<TreeNode> list) {
-        if(root != null) {
-            list.add(root);
-            process(root.left, list);
-            process(root.right, list);
+        Arrays.sort(nums);
+        int tmpLen = 1;
+        int maxLen = 1;
+        for(int i = 1; i < nums.length; i++) {
+            if(nums[i] == nums[i-1]) {
+                continue;
+            }
+            if(nums[i] == nums[i-1] + 1) {
+                tmpLen++;
+            } else {
+                maxLen = Math.max(tmpLen, maxLen);
+                tmpLen = 1;
+            }
         }
+        maxLen = Math.max(maxLen, tmpLen);
+        return maxLen;
     }
 }
