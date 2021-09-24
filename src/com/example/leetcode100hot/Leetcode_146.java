@@ -3,6 +3,9 @@ package com.example.leetcode100hot;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * LRU
+ */
 public class Leetcode_146 {
     class LRUCache {
         private class DlinkedNode {
