@@ -7,14 +7,10 @@ import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
-        Map<Integer, Integer> map = new HashMap<>(3);
-        System.out.println("size="+map.size());
-        map.put(1, 11);
-        System.out.println("size="+map.size());
-        map.put(2, 22);
-        System.out.println("size="+map.size());
-        map.put(3, 33);
-        System.out.println("size="+map.size());
+        for(int i = 0; i < 20; i++) {
+            int pivot = (int) (Math.random() * 3);
+            System.out.println(pivot);
+        }
 
     }
 }
