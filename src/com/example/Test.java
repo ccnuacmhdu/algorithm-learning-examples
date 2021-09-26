@@ -2,9 +2,19 @@ package com.example;
 
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
+        Map<Integer, Integer> map = new HashMap<>(3);
+        System.out.println("size="+map.size());
+        map.put(1, 11);
+        System.out.println("size="+map.size());
+        map.put(2, 22);
+        System.out.println("size="+map.size());
+        map.put(3, 33);
+        System.out.println("size="+map.size());
 
     }
 }
