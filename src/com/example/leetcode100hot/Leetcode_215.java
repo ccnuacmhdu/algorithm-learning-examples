@@ -29,25 +29,17 @@ public class Leetcode_215 {
         }
     }
     private void heapify(int[] a, int size) {
-        int p = 0;
-        int l = p * 2 + 1;
-        int r;
-        int max;
-        int idx;
+        int l = 1;
         while (l < size) {
-            r = l + 1;
-            max = Math.max(a[l], a[p]);
-            idx = a[l] > a[p] ? l : p;
-            if(r < size) {
-                max = Math.max(max, a[r]);
-                idx = max > a[r] ? idx : r;
+            int max = l;
+            if(l+1 < size && a[l] < a[l+1]) {
+                max = l + 1;
             }
-            if(idx == p) {
+            if(a[max] <= a[(l-1)/2]) {
                 break;
             }
-            swap(a, idx, p);
-            p = idx;
-            l = p * 2 + 1;
+            swap(a, max, (l-1)/2);
+            l = max * 2 + 1;
         }
     }
     private void swap(int[] a, int i, int j) {
@@ -59,10 +51,8 @@ public class Leetcode_215 {
     public static void main(String[] args) {
         Leetcode_215 leetcode_215 = new Leetcode_215();
         int[] nums = {5,2,4,1,3,6,0};
-        leetcode_215.heapSort(nums, 4);
-        for(int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + "\t");
-        }
-        System.out.println();
+        int res = leetcode_215.findKthLargest(nums, 4);
+
+        System.out.println(res);
     }
 }
