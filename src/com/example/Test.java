@@ -7,12 +7,14 @@ import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
-        for(int i = 0; i < 20; i++) {
-            int pivot = (int) (Math.random() * 3);
-            System.out.println(pivot);
+        int[] a = new int[]{1, 2, 9, 3, 0};
+        for(int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + "\t");
         }
-
+        System.out.println();
     }
+
+
 }
 
 
@@ -34,27 +36,5 @@ class TreeNode {
      this.val = val;
      this.left = left;
      this.right = right;
-    }
-}
-
-class Solution {
-    public int[] dailyTemperatures(int[] temperatures) {
-        int length = temperatures.length;
-        int[] ans = new int[length];
-        int[] next = new int[101];
-        Arrays.fill(next, Integer.MAX_VALUE);
-        for (int i = length - 1; i >= 0; --i) {
-            int warmerIndex = Integer.MAX_VALUE;
-            for (int t = temperatures[i] + 1; t <= 100; ++t) {
-                if (next[t] < warmerIndex) {
-                    warmerIndex = next[t];
-                }
-            }
-            if (warmerIndex < Integer.MAX_VALUE) {
-                ans[i] = warmerIndex - i;
-            }
-            next[temperatures[i]] = i;
-        }
-        return ans;
     }
 }
