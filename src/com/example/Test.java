@@ -7,13 +7,10 @@ import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
-        int[] a = new int[]{1, 2, 9, 3, 0};
-        for(int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + "\t");
-        }
-        System.out.println();
+        char c = 23578; // 只能赋值 [0, 65535] 范围，对应字符集编码值，如 A -> 65，a -> 97
+        String s = null;
+        System.out.println(s);
     }
-
 
 }
 
