@@ -1,15 +1,8 @@
 package com.example;
 
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 public class Test {
     public static void main(String[] args) {
-        char c = 23578; // 只能赋值 [0, 65535] 范围，对应字符集编码值，如 A -> 65，a -> 97
-        String s = null;
-        System.out.println(s);
     }
 
 }
