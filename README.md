@@ -15,11 +15,11 @@ com.example.sort.ReversePairProblem
 ## 2 二分查找
 com.example.binarySearch.BinarySearch
 #### 2.1 局部最小值问题
-com.example.binarysearch.Problem_001
+com.example.binarySearch.PartialMinimum
 #### 2.2 [leetcode] 1011. 在 D 天内送达包裹的能力
-com.example.binarysearch.Problem_002
+com.example.binarySearch.Leetcode_1011
 #### 2.3 [leetcode] 1482. 制作 m 束花所需的最少天数
-com.example.binarysearch.Problem_003
+com.example.binarysearch.Leetcode_1482
 
 ## 3 贪心
 #### 3.1 字符串拼接问题

@@ -1,8 +1,6 @@
-package com.example.binarysearch;
+package com.example.binarySearch;
 
-import java.util.Arrays;
-
-public class Problem_002 {
+public class Leetcode_1011 {
     /**
      * 思路：船运载能力最低得能装的下最重的货物，而最小的上限就是能装下所有货物。
      *      然后，二分找到运送天数小于等于 D 的最小值就 OK 了，按顺序取，那就

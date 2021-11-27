@@ -1,4 +1,4 @@
-package com.example.binarysearch;
+package com.example.binarySearch;
 
 /**
  * 局部最小值问题（一数组中，任意两个相邻的数都不一样，找到一个局部最小值。）
@@ -20,8 +20,8 @@ package com.example.binarysearch;
  * 【测试样例】
  * 1000,900,600,300,900,1000 （局部最小为 300）
  */
-public class Problem_001 {
-    public static int binarySearchLocalMinimum(int[] a) {
+public class PartialMinimum {
+    public static int binarySearchPartialMinimum(int[] a) {
         if(null == a || a.length <= 1) {
             return -1;
         }
