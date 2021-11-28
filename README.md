@@ -45,7 +45,11 @@ com.example.twoPointers.Leetcode_633
 ## 6 位运算(bitManipulation)
 com.example.bitManipulation.BitManipulation
 #### 6.1 [leetcode] 260. 只出现一次的数字 III
+com.example.bitManipulation.Leetcode_260
 
+## 7 链表(linkedList)
+#### 7.1 [leetcode] 92. 反转链表 II
+com.example.linkedList.Leetcode_92
 
 # 剑指 Offer
 #### 表示数值的字符串
