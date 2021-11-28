@@ -43,6 +43,8 @@ com.example.skipList.SkipList <br />
 com.example.twoPointers.Leetcode_633
 
 ## 6 位运算(bitManipulation)
+com.example.bitManipulation.BitManipulation
+#### 6.1 [leetcode] 260. 只出现一次的数字 III
 
 
 # 剑指 Offer
