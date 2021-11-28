@@ -1,6 +1,6 @@
 # algorithm-learning-examples
 # 算法学习篇
-## 1 排序
+## 1 排序(sort)
 快速排序思路过程详细图解
 ![快速排序思路过程详细图解](./pictures/quickSort.png)   
 各种排序复杂度稳定性比较<br>
@@ -12,7 +12,7 @@ com.example.sort.SmallSumProblem
 #### 1.3 逆序对问题
 com.example.sort.ReversePairProblem
 
-## 2 二分查找
+## 2 二分查找(binarySearch)
 com.example.binarySearch.BinarySearch
 #### 2.1 局部最小值问题
 com.example.binarySearch.PartialMinimum
@@ -21,7 +21,7 @@ com.example.binarySearch.Leetcode_1011
 #### 2.3 [leetcode] 1482. 制作 m 束花所需的最少天数
 com.example.binarysearch.Leetcode_1482
 
-## 3 贪心
+## 3 贪心(greedy)
 #### 3.1 字符串拼接问题
 com.example.greedy.GreedyExample01
 #### 3.2 金条分割问题
@@ -33,14 +33,17 @@ com.example.greedy.GreedyExample04
 #### 3.5 项目利润最大问题
 com.example.greedy.GreedyExample05
 
-## 4 跳表
+## 4 跳表(skipList)
 com.example.skipList.SkipList <br />
 跳表图解
 ![跳表图解](./pictures/skiplist.png)
 
-## 5 双指针
+## 5 双指针(twoPointers)
 #### 5.1 [leetcode] 633. 平方数之和
-com.example.twopointers.Problem_001
+com.example.twoPointers.Leetcode_633
+
+## 6 位运算(bitManipulation)
+
 
 # 剑指 Offer
 #### 表示数值的字符串
