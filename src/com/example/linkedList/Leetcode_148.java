@@ -42,11 +42,11 @@ public class Leetcode_148 {
     }
     private ListNode sortList(ListNode from, ListNode to) {
         // 0 个节点
-        if(from == null) {
+        if (from == null) {
             return from;
         }
         // 1 个节点（不好理解，需要举例，比如2节点链表，3节点链表，关键问题是null）
-        if(from.next == to) {
+        if (from.next == to) {
             from.next = null;
             return from;
         }
@@ -54,15 +54,17 @@ public class Leetcode_148 {
         ListNode fast = from;
         ListNode slow = from;
 
-        while(fast != to && fast.next != to) {
+        while (fast != to && fast.next != to) {
             fast = fast.next.next;
             slow = slow.next;
         }
 
         ListNode left = sortList(from, slow);
         ListNode right = sortList(slow, to);
-        return merge(left, right);
+        ListNode mergeRes = merge(left, right);
+        return mergeRes;
     }
+
     private ListNode merge(ListNode left, ListNode right) {
         ListNode dummy = new ListNode(-1);
         ListNode t = dummy;
@@ -76,15 +78,23 @@ public class Leetcode_148 {
             }
             t = t.next;
         }
-        // 注意是 if，不是 while
+        
+        /**
+         * 等价于下面代码，但没必要用 while
+         * while (left != null) {
+         *  t.next = left;
+         *  t = t.next;
+         *  left = left.next;
+         * }
+         */
         if(left != null) {
             t.next = left;
         }
+        
         // 注意是 if，不是 while
         if(right != null) {
             t.next = right;
         }
         return dummy.next;
     }
-
 }
