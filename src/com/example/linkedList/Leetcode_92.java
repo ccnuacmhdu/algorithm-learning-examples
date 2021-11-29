@@ -47,6 +47,29 @@ public class Leetcode_92 {
         }
     }
 
+    private class DoubleNode{
+        public int v;
+        public DoubleNode pre;
+        public DoubleNode next;
+        public DoubleNode(int v){
+            this.v = v;
+        }
+    }
+    // 反转双向链表
+    private DoubleNode reverseDoubleLinkedList(DoubleNode root) {
+        DoubleNode t = root;
+        DoubleNode next = null;
+        DoubleNode pre = null;
+        while (t != null) {
+            next = t.next;
+            t.next = pre;
+            t.pre = next;
+            pre = t;
+            t = next;
+        }
+        return pre;
+    }
+
     // v1
 //    public ListNode reverseBetween(ListNode head, int left, int right) {
 //        ListNode t = head, next = null, pre = null;

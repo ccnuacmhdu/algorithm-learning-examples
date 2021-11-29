@@ -50,6 +50,10 @@ com.example.bitManipulation.Leetcode_260
 ## 7 链表(linkedList)
 #### 7.1 [leetcode] 92. 反转链表 II
 com.example.linkedList.Leetcode_92
+#### 7.2 [leetcode] 148. 排序链表
+com.example.linkedList.Leetcode_148
+
+
 
 # 剑指 Offer
 #### 表示数值的字符串
