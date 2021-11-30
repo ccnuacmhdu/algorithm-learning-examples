@@ -56,6 +56,8 @@ com.example.linkedList.Leetcode_148
 com.example.linkedList.LinkedList_1
 #### 7.4 复制含有随机指针节点的链表
 com.example.linkedList.Leetcode_138
+#### 7.5 [leetcode] 160. 相交链表
+com.example.linkedList.Leetcode_160
 
 
 # 剑指 Offer
