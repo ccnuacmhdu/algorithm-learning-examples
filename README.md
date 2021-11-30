@@ -60,6 +60,8 @@ com.example.linkedList.Leetcode_138
 com.example.linkedList.Leetcode_160
 
 ## 8 二叉树(binaryTree)
+com.example.binaryTree.BinaryTree
+#### 8.1 [leetcode] 98. 验证二叉搜索树
 
 
 
