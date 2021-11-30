@@ -54,6 +54,8 @@ com.example.linkedList.Leetcode_92
 com.example.linkedList.Leetcode_148
 #### 7.3 将单向链表按某值划分成左边小、中间相等、右边大的形式
 com.example.linkedList.LinkedList_1
+#### 7.4 复制含有随机指针节点的链表
+com.example.linkedList.Leetcode_138
 
 
 # 剑指 Offer
