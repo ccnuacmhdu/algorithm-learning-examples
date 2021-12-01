@@ -6,7 +6,7 @@ import java.util.LinkedList;
  * 有左有右（√）
  * 有左无右（√）
  * 有右无左（×）
- * 无左无右（√），一旦出现叶子，后边只能是叶子
+ * 无左无右（√），一旦出现左无或右无，后边只能是叶子
  */
 public class Leetcode_958 {
 
