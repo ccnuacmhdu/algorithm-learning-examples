@@ -65,6 +65,8 @@ com.example.binaryTree.BinaryTree
 com.example.binaryTree.Leetcode_98
 #### 8.2 [leetcode] 110. 平衡二叉树
 com.example.binaryTree.Leetcode_110
+#### 8.3 [leetcode] 958. 二叉树的完全性检验
+com.example.binaryTree.Leetcode_958
 
 # 剑指 Offer
 #### 表示数值的字符串
