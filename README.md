@@ -62,8 +62,9 @@ com.example.linkedList.Leetcode_160
 ## 8 二叉树(binaryTree)
 com.example.binaryTree.BinaryTree
 #### 8.1 [leetcode] 98. 验证二叉搜索树
-
-
+com.example.binaryTree.Leetcode_98
+#### 8.2 [leetcode] 110. 平衡二叉树
+com.example.binaryTree.Leetcode_110
 
 # 剑指 Offer
 #### 表示数值的字符串
