@@ -67,6 +67,8 @@ com.example.binaryTree.Leetcode_98
 com.example.binaryTree.Leetcode_110
 #### 8.3 [leetcode] 958. 二叉树的完全性检验
 com.example.binaryTree.Leetcode_958
+#### 8.4 [leetcode] 235. 二叉搜索树的最近公共祖先
+com.example.binaryTree.Leetcode_235
 
 # 剑指 Offer
 #### 表示数值的字符串
