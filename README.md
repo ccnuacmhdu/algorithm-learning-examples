@@ -69,6 +69,8 @@ com.example.binaryTree.Leetcode_110
 com.example.binaryTree.Leetcode_958
 #### 8.4 [leetcode] 235. 二叉搜索树的最近公共祖先
 com.example.binaryTree.Leetcode_235
+#### 8.5 [leetcode] 285. 二叉搜索树中的中序后继
+com.example.binaryTree.Leetcode_285
 
 # 剑指 Offer
 #### 表示数值的字符串
