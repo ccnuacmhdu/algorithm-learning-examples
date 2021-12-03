@@ -77,6 +77,8 @@ com.example.binaryTree.JZ_37
 com.example.binaryTree.Leetcode_331
 
 ## 9 动态规划(dynamicProgramming)
+#### 9.1 [leetcode] 486. 预测赢家
+com.example.dynamicProgramming.Leetcode_486
 
 
 # 剑指 Offer
