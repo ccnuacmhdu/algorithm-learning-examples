@@ -71,10 +71,13 @@ com.example.binaryTree.Leetcode_958
 com.example.binaryTree.Leetcode_235
 #### 8.5 [leetcode] 285. 二叉搜索树中的中序后继
 com.example.binaryTree.Leetcode_285
+#### 8.6 [JZ] 剑指 Offer 37. 序列化二叉树
+com.example.binaryTree.JZ_37
+
 
 # 剑指 Offer
 #### 表示数值的字符串
-com.example.offer.OfferProblem01 <br />
+com.example.offer.JZ_20 <br />
 表示数值的自动机图解（图片来自 Leetcode 中国站点）
 ![表示数值的自动机图解](./pictures/%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%87%AA%E5%8A%A8%E6%9C%BA.png)
 
