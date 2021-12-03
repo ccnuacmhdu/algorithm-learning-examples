@@ -7,6 +7,11 @@ import java.util.Stack;
 
 /**
  * 1. 二叉树遍历
+ * 2. 二叉树边数和节点数的关系
+ *    n = n0 + n1 + n2 （n表示节点总数，n0/n1/n2表示出度分别为0，1，2的节点数）
+ *    e = n1 + 2 * n2 （e表示边数）
+ *    n = e + 1
+ *    n0 = n2 + 1
  */
 public class BinaryTree {
 
