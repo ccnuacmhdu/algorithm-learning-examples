@@ -79,7 +79,8 @@ com.example.binaryTree.Leetcode_331
 ## 9 动态规划(dynamicProgramming)
 #### 9.1 [leetcode] 486. 预测赢家
 com.example.dynamicProgramming.Leetcode_486
-
+#### 9.2 [leetcode] 64. 最小路径和
+com.example.dynamicProgramming.Leetcode_64
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
