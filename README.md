@@ -82,8 +82,9 @@ com.example.dynamicProgramming.Leetcode_486
 #### 9.2 [leetcode] 64. 最小路径和
 com.example.dynamicProgramming.Leetcode_64
 #### 9.3 [leetcode] 416. 分割等和子集
-
+com.example.dynamicProgramming.Leetcode_416
 #### 9.4 [leetcode] 322. 零钱兑换
+com.example.dynamicProgramming.Leetcode_322
 
 
 # 剑指 Offer
