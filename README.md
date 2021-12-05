@@ -81,6 +81,10 @@ com.example.binaryTree.Leetcode_331
 com.example.dynamicProgramming.Leetcode_486
 #### 9.2 [leetcode] 64. 最小路径和
 com.example.dynamicProgramming.Leetcode_64
+#### 9.3 [leetcode] 416. 分割等和子集
+
+#### 9.4 [leetcode] 322. 零钱兑换
+
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
