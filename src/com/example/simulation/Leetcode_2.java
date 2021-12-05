@@ -50,12 +50,13 @@ public class Leetcode_2 {
         ListNode p1 = l1, p2 = l2;
         ListNode dummy = new ListNode(0);
         ListNode t = dummy;
-        int q = 0, carry = 0, val1 = 0, val2 = 0;
+        int q = 0, carry = 0, val1 = 0, val2 = 0, sum = 0;
         while (p1 != null || p2 != null) {
             val1 = p1 != null ? p1.val : 0;
             val2 = p2 != null ? p2.val : 0;
-            q = (val1 + val2 + carry) % 10;
-            carry = (val1 + val2 + carry) / 10;
+            sum = val1 + val2 + carry;
+            q = sum % 10;
+            carry = sum / 10;
             t.next = new ListNode(q);
             t = t.next;
             p1 = p1 == null ? null : p1.next;
