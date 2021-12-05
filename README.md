@@ -183,208 +183,208 @@ com.example.leetcode.Leetcode_117
 
 ## 第 1 章 栈和队列
 #### 设计一个有 getMin 功能的栈
-com.example.codeinterview.chapter01.Code_01_01
+com.example.codeInterview.chapter01.Code_01_01
 #### 由两个栈组成的队列
-com.example.codeinterview.chapter01.Code_01_02
+com.example.codeInterview.chapter01.Code_01_02
 #### 如何仅用递归函数和栈操作逆序一个栈
-com.example.codeinterview.chapter01.Code_01_03
+com.example.codeInterview.chapter01.Code_01_03
 #### 猫狗队列
-com.example.codeinterview.chapter01.Code_01_04
+com.example.codeInterview.chapter01.Code_01_04
 #### 用一个栈实现另一个栈的排序
-com.example.codeinterview.chapter01.Code_01_05
+com.example.codeInterview.chapter01.Code_01_05
 #### 用栈来求解汉诺塔问题
-com.example.codeinterview.chapter01.Code_01_06
+com.example.codeInterview.chapter01.Code_01_06
 #### 生成窗口最大值数组
-com.example.codeinterview.chapter01.Code_01_07
+com.example.codeInterview.chapter01.Code_01_07
 #### 单调栈结构
-com.example.codeinterview.chapter01.Code_01_08
+com.example.codeInterview.chapter01.Code_01_08
 #### 求最大子矩阵的大小
-com.example.codeinterview.chapter01.Code_01_09
+com.example.codeInterview.chapter01.Code_01_09
 #### 最大值减去最小值小于或等于 num 的子数组数量
-com.example.codeinterview.chapter01.Code_01_10
+com.example.codeInterview.chapter01.Code_01_10
 #### 可见的山峰对数量
-com.example.codeinterview.chapter01.Code_01_11
+com.example.codeInterview.chapter01.Code_01_11
 
 ## 第 2 章 链表问题
 #### 打印两个有序链表的公共部分
-com.example.codeinterview.chapter02.Code_02_01
+com.example.codeInterview.chapter02.Code_02_01
 #### 在单链表和双链表中删除倒数第 K 个节点
-com.example.codeinterview.chapter02.Code_02_02
+com.example.codeInterview.chapter02.Code_02_02
 #### 在单链表和双链表中删除第 K 个节点
-com.example.codeinterview.chapter02.Code_02_03
+com.example.codeInterview.chapter02.Code_02_03
 #### 反转单向和双向链表
-com.example.codeinterview.chapter02.Code_02_04
+com.example.codeInterview.chapter02.Code_02_04
 #### 反转部分单向链表
-com.example.codeinterview.chapter02.Code_02_05
+com.example.codeInterview.chapter02.Code_02_05
 #### 环形单链表的约瑟夫问题
-com.example.codeinterview.chapter02.Code_02_06
+com.example.codeInterview.chapter02.Code_02_06
 #### 判断一个链表是否为回文结构
-com.example.codeinterview.chapter02.Code_02_07
+com.example.codeInterview.chapter02.Code_02_07
 #### 将单向链表按某值划分成左边小、中间相等、右边大的形式
-com.example.codeinterview.chapter02.Code_02_08
+com.example.codeInterview.chapter02.Code_02_08
 #### 复制含有随机指针节点的链表
-com.example.codeinterview.chapter02.Code_02_09
+com.example.codeInterview.chapter02.Code_02_09
 #### 两个单链表生成相加链表
-com.example.codeinterview.chapter02.Code_02_10
+com.example.codeInterview.chapter02.Code_02_10
 #### 两个单链表相交的一系列问题
-com.example.codeinterview.chapter02.Code_02_11
+com.example.codeInterview.chapter02.Code_02_11
 #### 将单链表的每 K 个节点之间逆序
-com.example.codeinterview.chapter02.Code_02_12
+com.example.codeInterview.chapter02.Code_02_12
 #### 删除无序单链表中值重复出现的节点
-com.example.codeinterview.chapter02.Code_02_13
+com.example.codeInterview.chapter02.Code_02_13
 #### 在单链表中删除指定值的节点
-com.example.codeinterview.chapter02.Code_02_14
+com.example.codeInterview.chapter02.Code_02_14
 #### 将搜索二叉树转换成双向链表
-com.example.codeinterview.chapter02.Code_02_15
+com.example.codeInterview.chapter02.Code_02_15
 #### 单链表的选择排序
-com.example.codeinterview.chapter02.Code_02_16
+com.example.codeInterview.chapter02.Code_02_16
 #### 一种怪异的节点删除方式
-com.example.codeinterview.chapter02.Code_02_17
+com.example.codeInterview.chapter02.Code_02_17
 #### 向有序的环形单链表中插入新节点
-com.example.codeinterview.chapter02.Code_02_18
+com.example.codeInterview.chapter02.Code_02_18
 #### 合并两个有序链表
-com.example.codeinterview.chapter02.Code_02_19
+com.example.codeInterview.chapter02.Code_02_19
 #### 按照左右半区的方式重新组合单链表
-com.example.codeinterview.chapter02.Code_02_20
+com.example.codeInterview.chapter02.Code_02_20
 
 ## 第 3 章 二叉树问题
 #### 分别用递归和非递归方式实现二叉树先序、中序和后序遍历
-com.example.codeinterview.chapter03.Code_03_01
+com.example.codeInterview.chapter03.Code_03_01
 #### 打印二叉树的边界节点
-com.example.codeinterview.chapter03.Code_03_02
+com.example.codeInterview.chapter03.Code_03_02
 #### 如何较为直观地打印二叉树
-com.example.codeinterview.chapter03.Code_03_03
+com.example.codeInterview.chapter03.Code_03_03
 #### 二叉树的序列化和反序列化
-com.example.codeinterview.chapter03.Code_03_04
+com.example.codeInterview.chapter03.Code_03_04
 #### 在二叉树中找到累加和为指定值的最长路径长度
-com.example.codeinterview.chapter03.Code_03_05
+com.example.codeInterview.chapter03.Code_03_05
 #### 找到二叉树中的最大搜索二叉子树
-com.example.codeinterview.chapter03.Code_03_06
+com.example.codeInterview.chapter03.Code_03_06
 #### 二叉树的按层打印与 ZigZag 打印
-com.example.codeinterview.chapter03.Code_03_07
+com.example.codeInterview.chapter03.Code_03_07
 #### 调整搜索二叉树中两个错误的节点
-com.example.codeinterview.chapter03.Code_03_08
+com.example.codeInterview.chapter03.Code_03_08
 #### 判断 t1 树是否包含 t2 树全部的拓扑结构
-com.example.codeinterview.chapter03.Code_03_09
+com.example.codeInterview.chapter03.Code_03_09
 #### 判断二叉树是否为平衡二叉树
-com.example.codeinterview.chapter03.Code_03_10
+com.example.codeInterview.chapter03.Code_03_10
 #### 根据后序数组重建搜索二叉树
-com.example.codeinterview.chapter03.Code_03_11
+com.example.codeInterview.chapter03.Code_03_11
 #### 判断一棵二叉树是否为搜索二叉树和完全二叉树
-com.example.codeinterview.chapter03.Code_03_12
+com.example.codeInterview.chapter03.Code_03_12
 #### 通过有序数组生成平衡搜索二叉树
-com.example.codeinterview.chapter03.Code_03_13
+com.example.codeInterview.chapter03.Code_03_13
 #### 在二叉树中找到一个节点的后继节点
-com.example.codeinterview.chapter03.Code_03_14
+com.example.codeInterview.chapter03.Code_03_14
 #### 在二叉树中找到两个节点的最近公共祖先
-com.example.codeinterview.chapter03.Code_03_15
+com.example.codeInterview.chapter03.Code_03_15
 #### 二叉树节点间的最大距离问题
-com.example.codeinterview.chapter03.Code_03_16
+com.example.codeInterview.chapter03.Code_03_16
 #### 派对的最大快乐值
-com.example.codeinterview.chapter03.Code_03_17
+com.example.codeInterview.chapter03.Code_03_17
 #### 通过先序和中序数组生成后序数组
-com.example.codeinterview.chapter03.Code_03_18
+com.example.codeInterview.chapter03.Code_03_18
 #### 统计和生成所有不同的二叉树
-com.example.codeinterview.chapter03.Code_03_19
+com.example.codeInterview.chapter03.Code_03_19
 #### 统计完全二叉树的节点数
-com.example.codeinterview.chapter03.Code_03_20
+com.example.codeInterview.chapter03.Code_03_20
 
 ## 第 4 章 递归和动态规划
 #### 斐波那契数列问题的递归和动态规划
-com.example.codeinterview.chapter04.Code_04_01
+com.example.codeInterview.chapter04.Code_04_01
 #### 矩阵的最小路径和
-com.example.codeinterview.chapter04.Code_04_02
+com.example.codeInterview.chapter04.Code_04_02
 #### 换钱的最少货币数
-com.example.codeinterview.chapter04.Code_04_03
+com.example.codeInterview.chapter04.Code_04_03
 #### 机器人达到指定位置方法数
-com.example.codeinterview.chapter04.Code_04_04
+com.example.codeInterview.chapter04.Code_04_04
 #### 换钱的方法数
-com.example.codeinterview.chapter04.Code_04_05
+com.example.codeInterview.chapter04.Code_04_05
 #### 最长递增子序列
-com.example.codeinterview.chapter04.Code_04_06
+com.example.codeInterview.chapter04.Code_04_06
 #### 汉诺塔问题
-com.example.codeinterview.chapter04.Code_04_07
+com.example.codeInterview.chapter04.Code_04_07
 #### 最长公共子序列
-com.example.codeinterview.chapter04.Code_04_08
+com.example.codeInterview.chapter04.Code_04_08
 #### 最长公共子串问题
-com.example.codeinterview.chapter04.Code_04_09
+com.example.codeInterview.chapter04.Code_04_09
 #### 龙与地下城游戏问题
-com.example.codeinterview.chapter04.Code_04_10
+com.example.codeInterview.chapter04.Code_04_10
 #### 数字字符串转换为字母组合的种数
-com.example.codeinterview.chapter04.Code_04_11
+com.example.codeInterview.chapter04.Code_04_11
 #### 排成一条线的纸牌博弈问题
-com.example.codeinterview.chapter04.Code_04_12
+com.example.codeInterview.chapter04.Code_04_12
 #### 跳跃游戏
-com.example.codeinterview.chapter04.Code_04_13
+com.example.codeInterview.chapter04.Code_04_13
 #### N 皇后问题
-com.example.codeinterview.chapter04.Code_04_14
+com.example.codeInterview.chapter04.Code_04_14
 
 ## 第 5 章 字符串问题
 #### 判断两个字符串是否互为变形词
-com.example.codeinterview.chapter05.Code_05_01
+com.example.codeInterview.chapter05.Code_05_01
 #### 判断两个字符串是否互为旋转词
-com.example.codeinterview.chapter05.Code_05_02
+com.example.codeInterview.chapter05.Code_05_02
 #### 将整数字符串转成整数值
-com.example.codeinterview.chapter05.Code_05_03
+com.example.codeInterview.chapter05.Code_05_03
 #### 删除多余字符得到字典序最小的字符串
-com.example.codeinterview.chapter05.Code_05_04
+com.example.codeInterview.chapter05.Code_05_04
 #### 数组中两个字符串的最小距离
-com.example.codeinterview.chapter05.Code_05_05
+com.example.codeInterview.chapter05.Code_05_05
 #### 字符串的转换路径问题
-com.example.codeinterview.chapter05.Code_05_06
+com.example.codeInterview.chapter05.Code_05_06
 #### 找到字符串的最长无重复字符子串
-com.example.codeinterview.chapter05.Code_05_07
+com.example.codeInterview.chapter05.Code_05_07
 
 ## 第 6 章 大数据和空间限制
 #### 岛问题
-com.example.codeinterview.chapter06.Code_06_01
+com.example.codeInterview.chapter06.Code_06_01
 
 ## 第 7 章 位运算
 #### 不用额外变量交换两个整数的值
-com.example.codeinterview.chapter07.Code_07_01
+com.example.codeInterview.chapter07.Code_07_01
 #### 不用做任何比较判断找出两个数中较大的数
-com.example.codeinterview.chapter07.Code_07_02
+com.example.codeInterview.chapter07.Code_07_02
 #### 只用位运算不用算术运算实现整数的加减乘除运算
-com.example.codeinterview.chapter07.Code_07_03
+com.example.codeInterview.chapter07.Code_07_03
 #### 整数的二进制数表达中有多少个 1
-com.example.codeinterview.chapter07.Code_07_04
+com.example.codeInterview.chapter07.Code_07_04
 #### 在其他数都出现偶数次的数组中找到出现奇数次的数
-com.example.codeinterview.chapter07.Code_07_05
+com.example.codeInterview.chapter07.Code_07_05
 #### 在其他数都出现 k 次的数组中找到只出现一次的数
-com.example.codeinterview.chapter07.Code_07_06
+com.example.codeInterview.chapter07.Code_07_06
 
 ## 第 8 章 数组和矩阵问题
 #### 转圈打印矩阵
-com.example.codeinterview.chapter08.Code_08_01
+com.example.codeInterview.chapter08.Code_08_01
 #### 需要排序的最短子数组长度
-com.example.codeinterview.chapter08.Code_08_02
+com.example.codeInterview.chapter08.Code_08_02
 #### 在行列都排好序的矩阵中找指定数
-com.example.codeinterview.chapter08.Code_08_03
+com.example.codeInterview.chapter08.Code_08_03
 #### 不重复打印排序数组中相加和为给定值的所有二元组和三元组
-com.example.codeinterview.chapter08.Code_08_04
+com.example.codeInterview.chapter08.Code_08_04
 #### 未排序正数数组中累加和为给定值的最长子数组长度
-com.example.codeinterview.chapter08.Code_08_05
+com.example.codeInterview.chapter08.Code_08_05
 #### 未排序数组中累加和为给定值的最长子数组系列问题
-com.example.codeinterview.chapter08.Code_08_06
+com.example.codeInterview.chapter08.Code_08_06
 #### 剑指 Offer 42. 连续子数组的最大和
-com.example.codeinterview.chapter08.Code_08_07
+com.example.codeInterview.chapter08.Code_08_07
 #### 在数组中找到一个局部最小的位置
-com.example.codeinterview.chapter08.Code_08_08
+com.example.codeInterview.chapter08.Code_08_08
 #### 数组中子数组的最大累乘积
-com.example.codeinterview.chapter08.Code_08_09
+com.example.codeInterview.chapter08.Code_08_09
 #### 打印 N 个数组整体最大的 Top K
-com.example.codeinterview.chapter08.Code_08_10
+com.example.codeInterview.chapter08.Code_08_10
 #### 求最短通路值
-com.example.codeinterview.chapter08.Code_08_11
+com.example.codeInterview.chapter08.Code_08_11
 #### 分金条的最小花费
-com.example.codeinterview.chapter08.Code_08_12
+com.example.codeInterview.chapter08.Code_08_12
 
 ## 第 9 章 其他题目
 #### 从 5 随机到 7 随机及其扩展
-com.example.codeinterview.chapter09.Code_09_01
+com.example.codeInterview.chapter09.Code_09_01
 #### 有关阶乘的两个问题
-com.example.codeinterview.chapter09.Code_09_02
+com.example.codeInterview.chapter09.Code_09_02
 #### 折纸问题
-com.example.codeinterview.chapter09.Code_09_03
+com.example.codeInterview.chapter09.Code_09_03
 #### 并查集的实现
-com.example.codeinterview.chapter09.Code_09_04
+com.example.codeInterview.chapter09.Code_09_04
