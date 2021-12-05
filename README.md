@@ -41,6 +41,8 @@ com.example.skipList.SkipList <br />
 ## 5 双指针(twoPointers)
 #### 5.1 [leetcode] 633. 平方数之和
 com.example.twoPointers.Leetcode_633
+#### 5.2 [leetcode] 3. 无重复字符的最长子串
+com.example.twoPointers.Leetcode_3
 
 ## 6 位运算(bitManipulation)
 com.example.bitManipulation.BitManipulation
