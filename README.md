@@ -86,6 +86,10 @@ com.example.dynamicProgramming.Leetcode_416
 #### 9.4 [leetcode] 322. 零钱兑换
 com.example.dynamicProgramming.Leetcode_322
 
+## 10 哈希表(hashTable)
+#### 10.1 [leetcode] 1. 两数之和
+com.example.hashTable.Leetcode_1
+
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
