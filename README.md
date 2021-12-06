@@ -87,6 +87,8 @@ com.example.dynamicProgramming.Leetcode_64
 com.example.dynamicProgramming.Leetcode_416
 #### 9.4 [leetcode] 322. 零钱兑换
 com.example.dynamicProgramming.Leetcode_322
+#### 9.5 [leetcode] 5. 最长回文子串
+com.example.dynamicProgramming.Leetcode_5
 
 ## 10 哈希表(hashTable)
 #### 10.1 [leetcode] 1. 两数之和
