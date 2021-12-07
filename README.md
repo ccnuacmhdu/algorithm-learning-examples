@@ -43,6 +43,8 @@ com.example.skipList.SkipList <br />
 com.example.twoPointers.Leetcode_633
 #### 5.2 [leetcode] 3. 无重复字符的最长子串
 com.example.twoPointers.Leetcode_3
+#### 5.3 [leetcode] 11. 盛最多水的容器
+com.example.twoPointers.Leetcode_11
 
 ## 6 位运算(bitManipulation)
 com.example.bitManipulation.BitManipulation
@@ -92,7 +94,7 @@ com.example.dynamicProgramming.Leetcode_5
 
 ## 10 哈希表(hashTable)
 #### 10.1 [leetcode] 1. 两数之和
-com.example.hashTable.Leetcode_1
+com.example.hashTable.Le**etcode_1
 
 ## 11 模拟(simulation)
 #### 11.1 [leetcode] 2. 两数相加
