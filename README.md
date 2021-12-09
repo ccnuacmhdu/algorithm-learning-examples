@@ -20,8 +20,6 @@ com.example.binarySearch.PartialMinimum
 com.example.binarySearch.Leetcode_1011
 #### 2.3 [leetcode] 1482. 制作 m 束花所需的最少天数
 com.example.binarysearch.Leetcode_1482
-#### 2.4 [leetcode] 15. 三数之和
-com.example.binarySearch.Leetcode_15
 
 ## 3 贪心(greedy)
 #### 3.1 字符串拼接问题
@@ -47,6 +45,8 @@ com.example.twoPointers.Leetcode_633
 com.example.twoPointers.Leetcode_3
 #### 5.3 [leetcode] 11. 盛最多水的容器
 com.example.twoPointers.Leetcode_11
+#### 5.4 [leetcode] 15. 三数之和
+com.example.twoPointers.Leetcode_15
 
 ## 6 位运算(bitManipulation)
 com.example.bitManipulation.BitManipulation
