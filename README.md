@@ -64,6 +64,8 @@ com.example.linkedList.LinkedList_1
 com.example.linkedList.Leetcode_138
 #### 7.5 [leetcode] 160. 相交链表
 com.example.linkedList.Leetcode_160
+#### 7.6 [leetcode] 23. 合并K个升序链表
+com.example.linkedList.Leetcode_23
 
 ## 8 二叉树(binaryTree)
 com.example.binaryTree.BinaryTree
@@ -106,7 +108,7 @@ com.example.simulation.Leetcode_2
 #### 12.1 [leetcode] 17. 电话号码的字母组合
 com.example.backtracking.Leetcode_17
 #### 12.2 [leetcode] 22. 括号生成
-
+com.example.backtracking.Leetcode_22
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
