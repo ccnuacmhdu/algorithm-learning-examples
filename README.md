@@ -20,6 +20,8 @@ com.example.binarySearch.PartialMinimum
 com.example.binarySearch.Leetcode_1011
 #### 2.3 [leetcode] 1482. 制作 m 束花所需的最少天数
 com.example.binarysearch.Leetcode_1482
+#### 2.4 [leetcode] 33. 搜索旋转排序数组
+com.example.binarySearch.Leetcode_33
 
 ## 3 贪心(greedy)
 #### 3.1 字符串拼接问题
