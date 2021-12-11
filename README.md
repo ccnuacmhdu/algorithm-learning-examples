@@ -110,6 +110,10 @@ com.example.backtracking.Leetcode_17
 #### 12.2 [leetcode] 22. 括号生成
 com.example.backtracking.Leetcode_22
 
+## 13 数学(math)
+#### 13.1 [leetcode] 31. 下一个排列
+com.example.math.Leetcode_31
+
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
 com.example.offer.JZ_13
