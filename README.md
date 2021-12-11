@@ -105,6 +105,7 @@ com.example.simulation.Leetcode_2
 ## 12 回溯(backtracking)
 #### 12.1 [leetcode] 17. 电话号码的字母组合
 com.example.backtracking.Leetcode_17
+#### 12.2 [leetcode] 22. 括号生成
 
 
 # 剑指 Offer
