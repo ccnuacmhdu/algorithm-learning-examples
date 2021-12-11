@@ -109,6 +109,8 @@ com.example.simulation.Leetcode_2
 com.example.backtracking.Leetcode_17
 #### 12.2 [leetcode] 22. 括号生成
 com.example.backtracking.Leetcode_22
+#### 12.3 [leetcode] 47. 全排列 II
+com.example.backtracking.Leetcode_47
 
 ## 13 数学(math)
 #### 13.1 [leetcode] 31. 下一个排列
