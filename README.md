@@ -117,6 +117,8 @@ com.example.backtracking.Leetcode_47
 ## 13 数学(math)
 #### 13.1 [leetcode] 31. 下一个排列
 com.example.math.Leetcode_31
+#### 13.2 [leetcode] 48. 旋转图像
+com.example.math.Leetcode_48
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
