@@ -34,6 +34,8 @@ com.example.greedy.GreedyExample03
 com.example.greedy.GreedyExample04
 #### 3.5 项目利润最大问题
 com.example.greedy.GreedyExample05
+#### 3.6 [leetcode] 55. 跳跃游戏
+com.example.greedy.Leetcode_55
 
 ## 4 跳表(skipList)
 com.example.skipList.SkipList <br />
