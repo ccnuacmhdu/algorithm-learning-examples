@@ -36,6 +36,8 @@ com.example.greedy.GreedyExample04
 com.example.greedy.GreedyExample05
 #### 3.6 [leetcode] 55. 跳跃游戏
 com.example.greedy.Leetcode_55
+#### 3.7 [leetcode] 56. 合并区间
+com.example.greedy.Leetcode_56
 
 ## 4 跳表(skipList)
 com.example.skipList.SkipList <br />
