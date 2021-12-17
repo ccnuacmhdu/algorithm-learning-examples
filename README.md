@@ -117,6 +117,8 @@ com.example.backtracking.Leetcode_17
 com.example.backtracking.Leetcode_22
 #### 12.3 [leetcode] 47. 全排列 II
 com.example.backtracking.Leetcode_47
+#### 12.4 [leetcode] 78. 子集
+com.example.backtracking.Leetcode_78
 
 ## 13 数学(math)
 #### 13.1 [leetcode] 31. 下一个排列
