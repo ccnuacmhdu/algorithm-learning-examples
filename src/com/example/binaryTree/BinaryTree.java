@@ -1,9 +1,6 @@
 package com.example.binaryTree;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * 1. 二叉树遍历
@@ -15,17 +12,17 @@ import java.util.Stack;
  */
 public class BinaryTree {
 
-    private static class Node {
+    private static class TreeNode {
         public int val;
-        public Node left;
-        public Node right;
+        public TreeNode left;
+        public TreeNode right;
 
-        public Node(int val) {
+        public TreeNode(int val) {
             this.val = val;
         }
     }
 
-    public static void preOrderRecursive(Node root) {
+    public static void preOrderRecursive(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -34,7 +31,7 @@ public class BinaryTree {
         preOrderRecursive(root.right);
     }
 
-    public static void inOrderRecursive(Node root) {
+    public static void inOrderRecursive(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -43,7 +40,7 @@ public class BinaryTree {
         inOrderRecursive(root.right);
     }
 
-    public static void postOrderRecursive(Node root) {
+    public static void postOrderRecursive(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -52,9 +49,9 @@ public class BinaryTree {
         System.out.print(root.val + " ");
     }
 
-    public static void preOrderUnRecursive(Node root) {
+    public static void preOrderUnRecursive(TreeNode root) {
         if (root != null) {
-            Stack<Node> stack = new Stack<Node>();
+            Stack<TreeNode> stack = new Stack<TreeNode>();
             stack.push(root);
             while (!stack.isEmpty()) {
                 root = stack.pop();
@@ -71,9 +68,9 @@ public class BinaryTree {
     }
 
     // 中序遍历（非递归）。左边界全部压栈，依次出栈（左-中），转向右侧入栈出栈（右）
-    public static void inOrderUnRecursive(Node root) {
+    public static void inOrderUnRecursive(TreeNode root) {
         if (root != null) {
-            Stack<Node> stack = new Stack<Node>();
+            Stack<TreeNode> stack = new Stack<TreeNode>();
             while (!stack.isEmpty() || root != null) {
                 if (root != null) {
                     stack.push(root);
@@ -88,10 +85,10 @@ public class BinaryTree {
         System.out.println();
     }
 
-    public static void postOrderUnRecursive(Node root) {
+    public static void postOrderUnRecursive(TreeNode root) {
         if (root != null) {
-            Stack<Node> stack1 = new Stack<Node>();
-            Stack<Node> stack2 = new Stack<Node>();
+            Stack<TreeNode> stack1 = new Stack<TreeNode>();
+            Stack<TreeNode> stack2 = new Stack<TreeNode>();
             stack1.push(root);
             while (!stack1.isEmpty()) {
                 root = stack1.pop();
@@ -110,54 +107,45 @@ public class BinaryTree {
         System.out.println();
     }
 
-    // 宽度遍历求最大宽度
-    public static int treeBFS(Node root) {
-        if (root != null) {
-            LinkedList<Node> queue = new LinkedList<Node>();
-            Map<Node, Integer> levelMap = new HashMap<Node, Integer>();
-
-            int maxWidth = 0;
-            int curLevel = 0;
-            int curWidth = 0;
-
-            queue.add(root);
-            levelMap.put(root, 1);
-            while (!queue.isEmpty()) {
-                root = queue.poll();
-                //System.out.print(root.val+" ");
-                if (root.left != null) {
-                    queue.add(root.left);
-                    levelMap.put(root.left, levelMap.get(root) + 1);
+    // 二叉树宽度优先遍历，逐层从左到右输出（Leetcode_102）
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if(root == null) return res;
+        List<Integer> list = new ArrayList<>();
+        LinkedList<TreeNode> que = new LinkedList<>();
+        TreeNode t;
+        que.add(root);
+        while(!que.isEmpty()) {
+            int size = que.size();
+            list.clear();
+            for(int i = 0; i < size; i++) {
+                t = que.poll();
+                list.add(t.val);
+                if(t.left != null) {
+                    que.add(t.left);
                 }
-                if (root.right != null) {
-                    queue.add(root.right);
-                    levelMap.put(root.right, levelMap.get(root) + 1);
+                if(t.right != null) {
+                    que.add(t.right);
                 }
-                if (levelMap.get(root) > curLevel) {
-                    curLevel = levelMap.get(root);
-                    curWidth = 1;
-                } else {
-                    curWidth++;
-                }
-                maxWidth = Math.max(maxWidth, curWidth);
             }
-            return maxWidth;
+            res.add(new ArrayList<Integer>(list));
         }
-        return 0;
+        return res;
     }
 
+
     public static void main(String[] args) {
-        Node head = new Node(5);
-        head.left = new Node(3);
-        head.right = new Node(8);
-        head.left.left = new Node(2);
-        head.left.right = new Node(4);
-        head.left.left.left = new Node(1);
-        head.right.left = new Node(7);
-        head.right.left.left = new Node(6);
-        head.right.right = new Node(10);
-        head.right.right.left = new Node(9);
-        head.right.right.right = new Node(11);
+        TreeNode head = new TreeNode(5);
+        head.left = new TreeNode(3);
+        head.right = new TreeNode(8);
+        head.left.left = new TreeNode(2);
+        head.left.right = new TreeNode(4);
+        head.left.left.left = new TreeNode(1);
+        head.right.left = new TreeNode(7);
+        head.right.left.left = new TreeNode(6);
+        head.right.right = new TreeNode(10);
+        head.right.right.left = new TreeNode(9);
+        head.right.right.right = new TreeNode(11);
 
         // recursive
         System.out.println("==============recursive==============");
@@ -176,8 +164,5 @@ public class BinaryTree {
         preOrderUnRecursive(head);
         inOrderUnRecursive(head);
         postOrderUnRecursive(head);
-
-        System.out.println("============BFS=============");
-        System.out.println(treeBFS(head));
     }
 }
