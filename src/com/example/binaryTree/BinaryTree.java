@@ -133,6 +133,12 @@ public class BinaryTree {
         return res;
     }
 
+    // 二叉树深度（Leetcode_104）
+    public int maxDepth(TreeNode root) {
+        if(root == null) return 0;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    }
+
 
     public static void main(String[] args) {
         TreeNode head = new TreeNode(5);
