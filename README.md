@@ -91,6 +91,8 @@ com.example.binaryTree.JZ_37
 com.example.binaryTree.Leetcode_331
 #### 8.8 [leetcode] 101. 对称二叉树
 com.example.binaryTree.Leetcode_101
+#### 8.9 [leetcode] 105. 从前序与中序遍历序列构造二叉树
+com.example.binaryTree.Leetcode_105
 
 ## 9 动态规划(dynamicProgramming)
 #### 9.1 [leetcode] 486. 预测赢家
