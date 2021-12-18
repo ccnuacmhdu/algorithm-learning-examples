@@ -127,6 +127,8 @@ com.example.backtracking.Leetcode_79
 com.example.math.Leetcode_31
 #### 13.2 [leetcode] 48. 旋转图像
 com.example.math.Leetcode_48
+#### 13.3 [leetcode] 96. 不同的二叉搜索树
+com.example.math.Leetcode_96
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
