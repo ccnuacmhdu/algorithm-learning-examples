@@ -109,6 +109,8 @@ com.example.dynamicProgramming.Leetcode_5
 ## 10 哈希表(hashTable)
 #### 10.1 [leetcode] 1. 两数之和
 com.example.hashTable.Leetcode_1
+#### 10.2 [leetcode] 128. 最长连续序列
+
 
 ## 11 模拟(simulation)
 #### 11.1 [leetcode] 2. 两数相加
