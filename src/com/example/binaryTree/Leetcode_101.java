@@ -1,8 +1,8 @@
-package com.example.leetcode100hot;
+package com.example.binaryTree;
 
 public class Leetcode_101 {
 
-    class TreeNode {
+    private class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -38,13 +38,6 @@ public class Leetcode_101 {
             return false;
         }
         return r1.val == r2.val && process(r1.left, r2.right) && process(r1.right, r2.left);
-    }
-
-
-    public static void main(String[] args) {
-        Leetcode_101 leetcode_101 = new Leetcode_101();
-        boolean symmetric = leetcode_101.isSymmetric(null);
-        System.out.println(symmetric);
     }
 
 }

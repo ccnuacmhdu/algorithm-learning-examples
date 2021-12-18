@@ -89,6 +89,8 @@ com.example.binaryTree.Leetcode_285
 com.example.binaryTree.JZ_37
 #### 8.7 [leetcode] 331. 验证二叉树的前序序列化
 com.example.binaryTree.Leetcode_331
+#### 8.8 [leetcode] 101. 对称二叉树
+com.example.binaryTree.Leetcode_101
 
 ## 9 动态规划(dynamicProgramming)
 #### 9.1 [leetcode] 486. 预测赢家
@@ -104,7 +106,7 @@ com.example.dynamicProgramming.Leetcode_5
 
 ## 10 哈希表(hashTable)
 #### 10.1 [leetcode] 1. 两数之和
-com.example.hashTable.Le**etcode_1
+com.example.hashTable.Leetcode_1
 
 ## 11 模拟(simulation)
 #### 11.1 [leetcode] 2. 两数相加
