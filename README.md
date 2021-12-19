@@ -138,6 +138,11 @@ com.example.math.Leetcode_96
 #### 13.4 [leetcode] 121. 买卖股票的最佳时机
 com.example.math.Leetcode_121
 
+## 14 设计(design)
+#### 14.1 [leetcode] 146. LRU 缓存机制
+com.example.design.Leetcode_146
+
+
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
 com.example.offer.JZ_13
