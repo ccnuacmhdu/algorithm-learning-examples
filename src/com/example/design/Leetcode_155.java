@@ -1,4 +1,4 @@
-package com.example.leetcode100hot;
+package com.example.design;
 
 import java.util.Stack;
 

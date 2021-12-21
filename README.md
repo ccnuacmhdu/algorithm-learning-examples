@@ -143,6 +143,8 @@ com.example.math.Leetcode_121
 ## 14 设计(design)
 #### 14.1 [leetcode] 146. LRU 缓存机制
 com.example.design.Leetcode_146
+#### 14.2 [leetcode] 155. 最小栈
+com.example.design.Leetcode_155
 
 
 # 剑指 Offer
