@@ -1,51 +1,52 @@
-package com.example.leetcode;
+package com.example.design;
 
 /**
  * 前缀树
  */
 public class Leetcode_208 {
     class Trie {
-        Trie[] children;
+
+        Trie[] children = new Trie[26];
         boolean isEnd;
 
         public Trie() {
-            children = new Trie[26];
-            isEnd = false;
+
         }
 
         public void insert(String word) {
-            Trie node = this;
+            Trie t = this;
             for(int i = 0; i < word.length(); i++) {
                 int idx = word.charAt(i) - 'a';
-                if(node.children[idx] == null) {
-                    node.children[idx] = new Trie();
+                if(t.children[idx] == null) {
+                    t.children[idx] = new Trie();
                 }
-                node = node.children[idx];
+                t = t.children[idx];
             }
-            node.isEnd = true;
-        }
-
-        public boolean search(String word) {
-            Trie node = searchPrefix(word);
-            return node != null && node.isEnd;
-        }
-
-        public boolean startsWith(String word) {
-            return searchPrefix(word) != null;
+            t.isEnd = true;
         }
 
         private Trie searchPrefix(String word) {
-            Trie node = this;
+            Trie t = this;
             for(int i = 0; i < word.length(); i++) {
                 int idx = word.charAt(i) - 'a';
-                if(node.children[idx] == null) {
+                if(t.children[idx] == null) {
                     return null;
                 }
-                node = node.children[idx];
+                t = t.children[idx];
             }
-            return node;
+            return t;
+        }
+
+        public boolean search(String word) {
+            Trie t = searchPrefix(word);
+            return t != null && t.isEnd;
+        }
+
+        public boolean startsWith(String prefix) {
+            return searchPrefix(prefix) != null;
         }
     }
+
     public static void main(String[] args) {
         Trie trie = new Leetcode_208().new Trie();
         trie.insert("app");
