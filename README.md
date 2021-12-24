@@ -148,6 +148,10 @@ com.example.design.Leetcode_146
 #### 14.2 [leetcode] 155. 最小栈
 com.example.design.Leetcode_155
 
+## 15 前缀和(prefixSum)
+#### 15.1 [leetcode] 238. 除自身以外数组的乘积
+com.example.prefixSum.Leetcode_238
+
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
