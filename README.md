@@ -167,8 +167,6 @@ com.example.leetcode.leetcode_51
 com.example.leetcode.Leetcode_257
 ### 60 第 k 个排列
 com.example.leetcode.Leetcode_60
-### 107 二叉树的层次遍历 II
-com.example.leetcode.Leetcode_107
 ### 347 前 K 个高频元素
 com.example.leetcode.Leetcode_347
 ### 77 组合
@@ -189,12 +187,8 @@ com.example.leetcode.Leetcode_79
 com.example.leetcode.Leetcode_LCP_20
 ### 37 解数独
 com.example.leetcode.Leetcode_37
-### 226 翻转二叉树
-com.example.leetcode.Leetcode_226
 ### LCP 21 追逐游戏
 com.example.leetcode.Leetcode_LCP_21
-### 47 全排列 II
-com.example.leetcode.Leetcode_47
 ### 404 左叶子之和
 com.example.leetcode.Leetcode_404
 ### 685 冗余连接 II
@@ -215,12 +209,8 @@ com.example.leetcode.Leetcode_968
 com.example.leetcode.Leetcode_617
 ### 501 二叉搜索树中的众数
 com.example.leetcode.Leetcode_501
-### 106 从中序与后序遍历序列构造二叉树
-com.example.leetcode.Leetcode_106
 ### 113 路径总和 II
 com.example.leetcode.Leetcode_113
-### 235 二叉搜索树的最近公共祖先
-com.example.leetcode.Leetcode_235
 ### 117 填充每个节点的下一个右侧节点指针 II
 com.example.leetcode.Leetcode_117
 
