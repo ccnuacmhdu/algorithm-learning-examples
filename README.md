@@ -72,6 +72,8 @@ com.example.linkedList.Leetcode_138
 com.example.linkedList.Leetcode_160
 #### 7.6 [leetcode] 23. 合并K个升序链表
 com.example.linkedList.Leetcode_23
+#### 7.7 [leetcode] 287. 寻找重复数
+com.example.linkedList.Leetcode_287
 
 ## 8 二叉树(binaryTree)
 com.example.binaryTree.BinaryTree
