@@ -2,9 +2,8 @@ package com.example.binaryTree;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
-public class JZ_37 {
+public class Leetcode_297 {
 
     private class TreeNode {
         int val;
@@ -17,27 +16,28 @@ public class JZ_37 {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if(root == null) {
-            return "#,";
+            return "#_";
         }
-        String res = root.val + ",";
-        res += serialize(root.left);
-        res += serialize(root.right);
-        return res;
+        StringBuffer sb = new StringBuffer();
+        sb.append(root.val).append("_");
+        String left = serialize(root.left);
+        String right = serialize(root.right);
+        sb.append(left).append(right);
+        return sb.toString();
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        String[] ss = data.split(",");
-        List<String> que = new LinkedList<>(Arrays.asList(ss));
+        String[] ss = data.split("_");
+        LinkedList<String> que = new LinkedList<>(Arrays.asList(ss));
         return deserialize(que);
     }
-    private TreeNode deserialize(List<String> que) {
-        if( "#".equals(que.get(0))) {
-            que.remove(0);
+    private TreeNode deserialize(LinkedList<String> que) {
+        String s = que.poll();
+        if(s.equals("#")) {
             return null;
         }
-        int v = Integer.valueOf(que.remove(0));
-        TreeNode root = new TreeNode(v);
+        TreeNode root = new TreeNode(Integer.valueOf(s));
         root.left = deserialize(que);
         root.right = deserialize(que);
         return root;

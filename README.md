@@ -87,8 +87,8 @@ com.example.binaryTree.Leetcode_958
 com.example.binaryTree.Leetcode_235
 #### 8.5 [leetcode] 285. 二叉搜索树中的中序后继
 com.example.binaryTree.Leetcode_285
-#### 8.6 [JZ] 剑指 Offer 37. 序列化二叉树
-com.example.binaryTree.JZ_37
+#### 8.6 [leetcode] 297. 二叉树的序列化与反序列化
+com.example.binaryTree.Leetcode_297
 #### 8.7 [leetcode] 331. 验证二叉树的前序序列化
 com.example.binaryTree.Leetcode_331
 #### 8.8 [leetcode] 101. 对称二叉树
