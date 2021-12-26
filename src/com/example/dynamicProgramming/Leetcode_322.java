@@ -30,21 +30,22 @@ public class Leetcode_322 {
     // 完全背包（动态规划）
     public int coinChange(int[] coins, int amount) {
         int n = coins.length;
-        int[][] dp = new int[amount+1][n];
+        int[][] dp = new int[n][amount + 1];
         int MAX_VALUE = 10001;
 
-        for(int i = 1; i <= amount; i++) {
-            dp[i][0] = (i % coins[0] == 0) ? (i / coins[0]) : MAX_VALUE;
+        for(int v = 1; v <= amount; v++) {
+            dp[0][v] = (v % coins[0] == 0) ? v / coins[0] : MAX_VALUE;
         }
-        for(int i = 1; i <= amount; i++) {
-            for(int j = 1; j < n; j++) {
-                int ans = MAX_VALUE;
-                for(int k = 0; k * coins[j] <= i; k++) {
-                    ans = Math.min(ans, dp[i-k*coins[j]][j-1] + k);
+        int min_coins = dp[0][amount];
+        for(int i = 1; i < n; i++) {
+            for(int v = 1; v <= amount; v++) {
+                dp[i][v] = MAX_VALUE;
+                for(int k = 0; k * coins[i] <= v; k++) {
+                    dp[i][v] = Math.min(dp[i][v], dp[i - 1][v - k * coins[i]] + k);
                 }
-                dp[i][j] = ans;
             }
+            min_coins = Math.min(min_coins, dp[i][amount]);
         }
-        return dp[amount][n-1] >= MAX_VALUE ? -1 : dp[amount][n-1];
+        return min_coins >= MAX_VALUE ? -1 : min_coins;
     }
 }
