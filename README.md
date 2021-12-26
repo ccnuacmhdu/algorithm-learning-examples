@@ -119,6 +119,8 @@ com.example.dynamicProgramming.Leetcode_188
 com.example.dynamicProgramming.Leetcode_309
 #### 9.11 [leetcode] 714. 买卖股票的最佳时机含手续费
 com.example.dynamicProgramming.Leetcode_714
+#### 9.12 [leetcode] 198. 打家劫舍
+com.example.dynamicProgramming.Leetcode_198
 
 ## 10 哈希表(hashTable)
 #### 10.1 [leetcode] 1. 两数之和
