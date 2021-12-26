@@ -58,6 +58,8 @@ com.example.twoPointers.Leetcode_15
 com.example.bitManipulation.BitManipulation
 #### 6.1 [leetcode] 260. 只出现一次的数字 III
 com.example.bitManipulation.Leetcode_260
+#### 6.2 [leetcode] 338. 比特位计数
+com.example.bitManipulation.Leetcode_338
 
 ## 7 链表(linkedList)
 #### 7.1 [leetcode] 92. 反转链表 II

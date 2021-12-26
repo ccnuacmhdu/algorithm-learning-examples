@@ -25,7 +25,7 @@ public class Leetcode_337 {
     }
 
     // 树形 DP，记录偷或不偷的最大收益
-    public int[] process(TreeNode root) {
+    private int[] process(TreeNode root) {
         if (root == null) {
             return new int[2];
         }
@@ -42,7 +42,7 @@ public class Leetcode_337 {
 //        return rob(root, true, new HashMap<String, Integer>());
 //    }
 //    // 记忆化搜索，要么打劫某节点，要么打劫某节点的两个孩子
-//    public int rob(TreeNode root, boolean willRob, Map<String, Integer> map) {
+//    private int rob(TreeNode root, boolean willRob, Map<String, Integer> map) {
 //        if(root == null) {
 //            return 0;
 //        }
