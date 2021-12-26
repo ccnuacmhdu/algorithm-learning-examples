@@ -1,4 +1,4 @@
-package com.example.leetcode;
+package com.example.binaryTree;
 
 public class Leetcode_437 {
     class TreeNode {

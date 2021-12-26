@@ -99,6 +99,8 @@ com.example.binaryTree.Leetcode_331
 com.example.binaryTree.Leetcode_101
 #### 8.9 [leetcode] 105. 从前序与中序遍历序列构造二叉树
 com.example.binaryTree.Leetcode_105
+#### 8.10 [leetcode] 437. 路径总和 III
+com.example.binaryTree.Leetcode_437
 
 ## 9 动态规划(dynamicProgramming)
 #### 9.1 [leetcode] 486. 预测赢家
@@ -171,6 +173,10 @@ com.example.design.Leetcode_155
 ## 15 前缀和(prefixSum)
 #### 15.1 [leetcode] 238. 除自身以外数组的乘积
 com.example.prefixSum.Leetcode_238
+
+## 16 滑动窗口(slidingWindow)
+#### 16.1 [leetcode] 438. 找到字符串中所有字母异位词
+com.example.slidingWindow.Leetcode_438
 
 
 # 剑指 Offer
