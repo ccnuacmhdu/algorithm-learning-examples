@@ -38,6 +38,8 @@ com.example.greedy.GreedyExample05
 com.example.greedy.Leetcode_55
 #### 3.7 [leetcode] 56. 合并区间
 com.example.greedy.Leetcode_56
+#### 3.8 [leetcode] 406. 根据身高重建队列
+com.example.greedy.Leetcode_406
 
 ## 4 跳表(skipList)
 com.example.skipList.SkipList <br />
