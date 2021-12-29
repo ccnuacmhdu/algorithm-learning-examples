@@ -40,6 +40,8 @@ com.example.greedy.Leetcode_55
 com.example.greedy.Leetcode_56
 #### 3.8 [leetcode] 406. 根据身高重建队列
 com.example.greedy.Leetcode_406
+#### 3.9 [leetcode] 581. 最短无序连续子数组
+com.example.greedy.Leetcode_581
 
 ## 4 跳表(skipList)
 com.example.skipList.SkipList <br />

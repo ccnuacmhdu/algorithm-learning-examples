@@ -1,12 +1,21 @@
 package com.example;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Test {
 
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
+        int[] a = {1, 2, 3};
+        int[] b = Arrays.copyOfRange(a, 0, a.length);
+
+        Arrays.stream(b).forEach(System.out::println);
+
+
+        Stack<Integer> stack = new Stack<>();
+
+        LinkedList<Integer> list = new LinkedList<>();
+
     }
 
 
