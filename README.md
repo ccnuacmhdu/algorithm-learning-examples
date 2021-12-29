@@ -177,6 +177,8 @@ com.example.design.Leetcode_155
 ## 15 前缀和(prefixSum)
 #### 15.1 [leetcode] 238. 除自身以外数组的乘积
 com.example.prefixSum.Leetcode_238
+#### 15.2 [leetcode] 560. 和为 K 的子数组
+com.example.prefixSum.Leetcode_560
 
 ## 16 滑动窗口(slidingWindow)
 #### 16.1 [leetcode] 438. 找到字符串中所有字母异位词
