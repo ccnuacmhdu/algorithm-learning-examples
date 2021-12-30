@@ -181,6 +181,8 @@ com.example.design.Leetcode_155
 com.example.prefixSum.Leetcode_238
 #### 15.2 [leetcode] 560. 和为 K 的子数组
 com.example.prefixSum.Leetcode_560
+#### 15.3 [leetcode] 2121. 相同元素的间隔之和
+com.example.prefixSum.Leetcode_2121
 
 ## 16 滑动窗口(slidingWindow)
 #### 16.1 [leetcode] 438. 找到字符串中所有字母异位词

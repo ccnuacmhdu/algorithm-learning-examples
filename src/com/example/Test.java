@@ -15,6 +15,11 @@ public class Test {
         Stack<Integer> stack = new Stack<>();
 
         LinkedList<Integer> list = new LinkedList<>();
+        list.toArray(new Integer[0]);
+
+
+        Map<String, List<Integer>> map2 = new HashMap<>();
+
 
     }
 
