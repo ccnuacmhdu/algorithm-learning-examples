@@ -47,7 +47,7 @@ public class Sort{
         for(int i = 0; i < testTime; i++){
             int[] a = generateRandomArray(size, scope);
             int[] b = copyArray(a);
-            heapSort(a);
+            quickSort(a);
             compare(b);
             if(isEqual(a, b) == false){
                 flag  = false;
@@ -187,7 +187,7 @@ public class Sort{
     // 荷兰国旗问题，返回等于 pivot 区域的左右边界
     public static int[] partition(int[] a, int l, int r) {
         int choose = l + (int)((r-l)*Math.random());
-        int pivot = a[choose];
+        int pivot = a[choose];  // 要这样算出来，而不是直接用 a[choose] （这个每次调用 random 导致变化。。）
         int small = l - 1;  // 小于 pivot 区右边界
         int big = r + 1;    // 大于 pivot 区左边界
         int cur = l;
