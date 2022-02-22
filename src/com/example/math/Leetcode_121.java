@@ -3,18 +3,31 @@ package com.example.math;
 import java.util.Stack;
 
 public class Leetcode_121 {
-    // 单调栈或前缀数组优化
     public int maxProfit(int[] prices) {
-        int minPrice = Integer.MAX_VALUE;
-        int ans = 0;
-        for(int price : prices) {
-            if(price > minPrice) {
-                ans = Math.max(ans, price - minPrice);
+        if(prices == null || prices.length < 2) return 0;
+        int buy = prices[0];
+        int maxProfit = 0;
+        for(int i = 1; i < prices.length; i++) {
+            maxProfit = Math.max(maxProfit, prices[i] - buy);
+            if(prices[i] < buy) {
+                buy = prices[i];
             }
-            minPrice = Math.min(minPrice, price);
         }
-        return ans;
+        return maxProfit;
     }
+
+    // 单调栈或前缀数组优化
+//    public int maxProfit(int[] prices) {
+//        int minPrice = Integer.MAX_VALUE;
+//        int ans = 0;
+//        for(int price : prices) {
+//            if(price > minPrice) {
+//                ans = Math.max(ans, price - minPrice);
+//            }
+//            minPrice = Math.min(minPrice, price);
+//        }
+//        return ans;
+//    }
 
     // 单调栈
 //    public int maxProfit(int[] prices) {
