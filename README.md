@@ -425,8 +425,6 @@ com.example.codeInterview.chapter05.Code_05_06
 com.example.codeInterview.chapter05.Code_05_07
 
 ## 第 6 章 大数据和空间限制
-#### 岛问题
-com.example.codeInterview.chapter06.Code_06_01
 
 ## 第 7 章 位运算
 #### 不用额外变量交换两个整数的值
