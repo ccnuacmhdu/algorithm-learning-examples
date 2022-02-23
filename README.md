@@ -169,6 +169,8 @@ com.example.math.Leetcode_48
 com.example.math.Leetcode_96
 #### 13.4 [leetcode] 121. 买卖股票的最佳时机
 com.example.math.Leetcode_121
+#### 13.5 [leetcode] 69. x 的平方根
+com.example.math.Leetcode_69
 
 ## 14 设计(design)
 #### 14.1 [leetcode] 146. LRU 缓存机制
