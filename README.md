@@ -30,8 +30,8 @@ com.example.greedy.GreedyExample01
 com.example.greedy.GreedyExample02
 #### 3.3 安排最多的项目问题
 com.example.greedy.GreedyExample03
-#### 3.4 数据流中随时可取得中位数问题
-com.example.greedy.GreedyExample04
+#### 3.4 [leetcode] 295. 数据流的中位数
+com.example.greedy.Leetcode_295
 #### 3.5 项目利润最大问题
 com.example.greedy.GreedyExample05
 #### 3.6 [leetcode] 55. 跳跃游戏
