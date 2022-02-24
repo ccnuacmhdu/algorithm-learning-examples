@@ -105,6 +105,8 @@ com.example.binaryTree.Leetcode_105
 com.example.binaryTree.Leetcode_437
 #### 8.11 [leetcode] 543. 二叉树的直径
 com.example.binaryTree.Leetcode_543
+#### 8.12 [leetcode] 226. 翻转二叉树
+com.example.binaryTree.Leetcode_226
 
 ## 9 动态规划(dynamicProgramming)
 #### 9.1 [leetcode] 486. 预测赢家
