@@ -1,7 +1,7 @@
-package com.example.design;
+package com.example.trie;
 
 /**
- * 前缀树
+ * 字典树
  */
 public class Leetcode_208 {
     class Trie {
