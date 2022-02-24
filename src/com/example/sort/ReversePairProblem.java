@@ -27,15 +27,9 @@ public class ReversePairProblem {
         ArrayList<String> list1 = mergeSort(a, left, mid);
         ArrayList<String> list2 = mergeSort(a, mid+1, right);
         ArrayList<String> list3 = merge(a, left, mid, right);
-        for(int i = 0; i < list1.size(); i++){
-            res.add(list1.get(i));
-        }
-        for(int i = 0; i < list2.size(); i++){
-            res.add(list2.get(i));
-        }
-        for(int i = 0; i < list3.size(); i++){
-            res.add(list3.get(i));
-        }
+        res.addAll(list1);
+        res.addAll(list2);
+        res.addAll(list3);
         return res;
     }
 
