@@ -80,6 +80,8 @@ com.example.linkedList.Leetcode_160
 com.example.linkedList.Leetcode_23
 #### 7.7 [leetcode] 287. 寻找重复数
 com.example.linkedList.Leetcode_287
+#### 7.8 [leetcode] 25. K 个一组翻转链表
+com.example.linkedList.Leetcode_25
 
 ## 8 二叉树(binaryTree)
 com.example.binaryTree.BinaryTree
@@ -175,6 +177,9 @@ com.example.math.Leetcode_121
 com.example.math.Leetcode_69
 #### 13.6 [leetcode] 43. 字符串相乘
 com.example.math.Leetcode_43
+#### 13.7 [leetcode] 60. 排列序列
+com.example.math.Leetcode_60
+
 
 ## 14 设计(design)
 #### 14.1 [leetcode] 146. LRU 缓存机制

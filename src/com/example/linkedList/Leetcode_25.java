@@ -1,4 +1,4 @@
-package com.example.hard;
+package com.example.linkedList;
 
 /**
  * K 个一组翻转链表
