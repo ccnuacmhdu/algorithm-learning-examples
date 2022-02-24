@@ -3,15 +3,16 @@ package com.example.math;
 public class Leetcode_43 {
     public String multiply(String num1, String num2) {
         if(num1.equals("0") || num2.equals("0")) return "0";
-        int n = num1.length() + num2.length();
+        int len1 = num1.length(), len2 = num2.length();
+        int n = len1 + len2;
         int[] arr = new int[n];
         char[] c1 = num1.toCharArray();
         char[] c2 = num2.toCharArray();
         int idx = n - 1;
-        for(int i = c1.length - 1; i >= 0; i--) {
+        for(int i = len1 - 1; i >= 0; i--) {
             int k = idx--;
             int x = c1[i] - '0';
-            for(int j = c2.length - 1; j >= 0; j--) {
+            for(int j = len2 - 1; j >= 0; j--) {
                 int y = c2[j] - '0';
                 arr[k--] += x * y;
             }
