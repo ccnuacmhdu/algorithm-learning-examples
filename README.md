@@ -171,6 +171,8 @@ com.example.math.Leetcode_96
 com.example.math.Leetcode_121
 #### 13.5 [leetcode] 69. x 的平方根
 com.example.math.Leetcode_69
+#### 13.6 [leetcode] 43. 字符串相乘
+com.example.math.Leetcode_43
 
 ## 14 设计(design)
 #### 14.1 [leetcode] 146. LRU 缓存机制
