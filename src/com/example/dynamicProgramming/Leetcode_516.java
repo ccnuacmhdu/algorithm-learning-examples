@@ -5,6 +5,7 @@ public class Leetcode_516 {
      * 最长回文子序列
      *
      * 转化成求最长公共子序列问题（原字符串和逆序后的字符串）
+     * dp[i][j]，c1前i个字符和c2前j个字符最长公共子序列的长度
      *
      * @param s
      * @return
