@@ -165,6 +165,8 @@ com.example.backtracking.Leetcode_47
 com.example.backtracking.Leetcode_78
 #### 12.5 [leetcode] 79. 单词搜索
 com.example.backtracking.Leetcode_79
+#### 12.6 [leetcode] 113. 路径总和 II
+com.example.backtracking.Leetcode_113
 
 ## 13 数学(math)
 #### 13.1 [leetcode] 31. 下一个排列
