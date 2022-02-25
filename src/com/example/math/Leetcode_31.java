@@ -1,9 +1,13 @@
 package com.example.math;
 
 public class Leetcode_31 {
-    // 下一个排列
-    // 3, 6, 5, 4, 2, 1
-    // 从后往前找第一个升序位置(3)，从后往前找第一个大于3的数(4)并与之交换，3后面的数排序（逆序）
+    /**
+     * 下一个排列
+     *
+     * 例子，3, 6, 5, 4, 2, 1，从后往前找第一个升序位置(3)，从后往前找第一个大于3的数(4)并与之交换，4及其后面的数排序（逆序）
+     *
+     * @param nums
+     */
     public void nextPermutation(int[] nums) {
         if(nums == null || nums.length < 2) return;
         int n = nums.length;
