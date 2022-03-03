@@ -109,6 +109,8 @@ com.example.binaryTree.Leetcode_437
 com.example.binaryTree.Leetcode_543
 #### 8.12 [leetcode] 226. 翻转二叉树
 com.example.binaryTree.Leetcode_226
+#### 8.13 [leetcode] 124. 二叉树中的最大路径和
+com.example.binaryTree.Leetcode_124
 
 ## 9 动态规划(dynamicProgramming)
 #### 9.1 [leetcode] 486. 预测赢家
