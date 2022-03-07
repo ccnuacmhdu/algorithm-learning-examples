@@ -24,7 +24,7 @@ public class Leetcode_337 {
         return Math.max(ans[0], ans[1]);
     }
 
-    // 树形 DP，记录偷或不偷的最大收益
+    // 树形DP，记录偷或不偷的最大收益
     private int[] process(TreeNode root) {
         if (root == null) {
             return new int[2];
