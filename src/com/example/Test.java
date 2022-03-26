@@ -1,8 +1,6 @@
 package com.example;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class Test {
     private static class Node {
@@ -19,6 +17,10 @@ public class Test {
 
 
     public static void main(String[] args) {
+
+        List<Integer> list = new ArrayList<>();
+        int[] a2 = list.toArray(new int[0]);
+
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int sortWay = scanner.nextInt();
