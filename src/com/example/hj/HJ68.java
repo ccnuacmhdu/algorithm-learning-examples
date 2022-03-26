@@ -1,10 +1,13 @@
-package com.example;
+package com.example.hj;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class Test {
+/**
+ * HJ68 成绩排序
+ */
+public class HJ68 {
     private static class Node {
         String name;
         int score;
@@ -34,10 +37,10 @@ public class Test {
     }
 
     private static void sort(Node[] nodes, int sortWay) {
-        if(sortWay == 0) {
+        if(sortWay == 1) {
             Arrays.sort(nodes, new Comparator<Node>(){
                 public int compare(Node n1, Node n2) {
-                    if(n1.score < n2.score) {
+                    if(n1.score != n2.score) {
                         return n1.score - n2.score;
                     } else {
                         return n1.id - n2.id;
@@ -47,7 +50,7 @@ public class Test {
         } else {
             Arrays.sort(nodes, new Comparator<Node>(){
                 public int compare(Node n1, Node n2) {
-                    if(n1.score < n2.score) {
+                    if(n1.score != n2.score) {
                         return n2.score - n1.score;
                     } else {
                         return n1.id - n2.id;
@@ -61,41 +64,5 @@ public class Test {
         for(Node node : nodes) {
             System.out.printf("%s %d\n", node.name, node.score);
         }
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
