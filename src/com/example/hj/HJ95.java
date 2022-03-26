@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class HJ95 {
     private static String[] chn = {"零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖"};
-    private static String[] unit = {null, "拾", "佰", "仟", "万", "拾", "佰", "仟", "亿"};
+    private static String[] unit = {null, "拾", "佰", "仟", "万", "拾", "佰", "仟", "亿", "拾", "佰", "仟", "兆"};
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class HJ95 {
             int n = Integer.valueOf(String.valueOf(s.charAt(i)));
             int unitIdx = s.length() - 1 - i;
             if(n == 0) {
-                if(!hasZero && unitIdx != 4) {
+                if(!hasZero && unitIdx != 4 && unitIdx != 8) {  // 应限制 unitInx != 4 的整数倍，例子：89003400089.12
                     hasZero = true;
                     sb.append(chn[0]);
                 }
