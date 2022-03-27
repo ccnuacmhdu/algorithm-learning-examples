@@ -1,50 +1,69 @@
-package com.example;
+package com.example.hj;
 
 import java.util.*;
 
-public class Main {
+/**
+ * HJ18 识别有效的IP地址和掩码并进行分类统计
+ */
+public class HJ18 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<String> ipList = new ArrayList<>();
-        List<String> maskList = new ArrayList<>();
         int cntA = 0, cntB = 0, cntC = 0, cntD = 0, cntE = 0;
         int cntErr = 0;
         int cntPrivate = 0;
         while(scanner.hasNextLine()) {
             String s = scanner.nextLine();
             String[] ss = s.split("~");
-            ipList.add(ss[0]);
-            maskList.add(ss[1]);
-            if(!check(ss[0])) {
+            if(check0And127(ss[0])) continue;
+            if(!checkIp(ss[0]) || !checkMask(ss[1])) {
                 cntErr++;
             } else {
-                if(ss[0].compareTo("1.0.0.0") >= 0 && ss[0].compareTo("126.255.255.255") <= 0) {
-                    if(ss[0].compareTo("10.0.0.0") >= 0 && ss[0].compareTo("10.255.255.255") <= 0) {
+                String[] ss1 = ss[0].split("\\.");
+                int ip1 = Integer.valueOf(ss1[0]);
+                int ip2 = Integer.valueOf(ss1[1]);
+                if(ip1 >= 1 && ip1 <= 126) {
+                    if(ip1 == 10) {
                         cntPrivate++;
                     }
                     cntA++;
-                } else if(ss[0].compareTo("128.0.0.0") >= 0 && ss[0].compareTo("191.255.255.255") <= 0) {
-                    if(ss[0].compareTo("172.16.0.0") >= 0 && ss[0].compareTo("172.31.255.255") <= 0) {
+                } else if(ip1 >= 128 && ip1 <= 191) {
+                    if(ip1 == 172 && ip2 >= 16 && ip2 <= 31) {
                         cntPrivate++;
                     }
                     cntB++;
-                } else if(ss[0].compareTo("192.0.0.0") >= 0 && ss[0].compareTo("223.255.255.255") <= 0) {
-                    if(ss[0].compareTo("192.168.0.0") >= 0 && ss[0].compareTo("192.168.255.255") <= 0) {
+                } else if(ip1 >= 192 && ip1 <= 223) {
+                    if(ip1 == 192 && ip2 == 168) {
                         cntPrivate++;
                     }
                     cntC++;
-                } else if(ss[0].compareTo("224.0.0.0") >= 0 && ss[0].compareTo("239.255.255.255") <= 0) {
+                } else if(ip1 >= 224 && ip1 <= 239) {
                     cntD++;
-                } else if(ss[0].compareTo("240.0.0.0") >= 0 && ss[0].compareTo("255.255.255.255") <= 0) {
+                } else if(ip1 >= 240 && ip1 <= 255) {
                     cntE++;
                 }
-            }
-            if(!checkMask(ss[1])) {
-                cntErr++;
             }
         }
         System.out.printf("%d %d %d %d %d %d %d\n", cntA, cntB, cntC, cntD, cntE, cntErr, cntPrivate);
     }
+
+    private static int compare(String s1, String s2) {
+        String[] ss1 = s1.split("\\.");
+        String[] ss2 = s2.split("\\.");
+        for(int i = 0; i < 4; i++) {
+            int x = Integer.valueOf(ss1[i]);
+            int y = Integer.valueOf(ss2[i]);
+            if(x < y) return -1;
+            if(x > y) return 1;
+        }
+        return 0;
+    }
+
+    private static boolean check0And127(String s) {
+        if(!check(s)) return false;
+        if(s.startsWith("127") || s.startsWith("0")) return true;
+        return false;
+    }
+
     private static boolean check(String s) {
         String[] ss = s.split("\\.");
         if(ss.length != 4) return false;
@@ -64,9 +83,22 @@ public class Main {
         return true;
     }
 
+    private static boolean checkIp(String ip) {
+        if(!check(ip)) return false;
+        String[] ss = ip.split("\\.");
+        StringBuffer sb = new StringBuffer();
+        for(int i = 0; i < 4; i++) {
+            int num = Integer.valueOf(ss[i]);
+            if(!(num >= 0 && num <= 255)){
+                return false;
+            }
+        }
+        return true;
+    }
+
     private static boolean checkMask(String mask) {
         if(!check(mask)) return false;
-        if("0.0.0.0".equals(mask) || "1.1.1.1".equals(mask)) return false;
+        if("0.0.0.0".equals(mask) || "255.255.255.255".equals(mask)) return false;
         String[] ss = mask.split("\\.");
         StringBuffer sb = new StringBuffer();
         for(int i = 0; i < 4; i++) {
@@ -88,41 +120,4 @@ public class Main {
         return true;
     }
 
-}
-
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
 }
