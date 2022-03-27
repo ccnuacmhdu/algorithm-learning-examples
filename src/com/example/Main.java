@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        StringBuffer sb = new StringBuffer();
+
+
         List<List<Integer>> lists = new ArrayList<>();
         permutation(new int[]{1, 2, 3, 4}, 0, lists, new ArrayList<>());
         for(List<Integer> list : lists) {
