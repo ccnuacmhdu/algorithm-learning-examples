@@ -2,6 +2,9 @@ package com.example.hj;
 
 import java.util.*;
 
+/**
+ * HJ105 记负均正II
+ */
 public class HJ105 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

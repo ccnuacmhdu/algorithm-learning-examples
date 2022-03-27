@@ -2,6 +2,9 @@ package com.example.hj;
 
 import java.util.*;
 
+/**
+ * HJ93 数组分组
+ */
 public class HJ93 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

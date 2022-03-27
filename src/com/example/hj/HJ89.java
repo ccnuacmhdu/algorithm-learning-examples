@@ -2,6 +2,9 @@ package com.example.hj;
 
 import java.util.*;
 
+/**
+ * HJ89 24点运算
+ */
 public class HJ89 {
     private static String[] digit = {"", "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
     private static Map<String, Integer> map = getDigitMap();
