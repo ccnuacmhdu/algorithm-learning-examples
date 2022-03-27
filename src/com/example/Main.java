@@ -4,46 +4,12 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        List<String> ipList = new ArrayList<>();
-        List<String> maskList = new ArrayList<>();
-        int cntA = 0, cntB = 0, cntC = 0, cntD = 0, cntE = 0;
-        int cntErr = 0;
-        int cntPrivate = 0;
-        while(scanner.hasNextLine()) {
-            String s = scanner.nextLine();
-            String[] ss = s.split("~");
-            ipList.add(ss[0]);
-            maskList.add(ss[1]);
-            if(!check(ss[0])) {
-                cntErr++;
-            } else {
-                if(ss[0].compareTo("1.0.0.0") >= 0 && ss[0].compareTo("126.255.255.255") <= 0) {
-                    if(ss[0].compareTo("10.0.0.0") >= 0 && ss[0].compareTo("10.255.255.255") <= 0) {
-                        cntPrivate++;
-                    }
-                    cntA++;
-                } else if(ss[0].compareTo("128.0.0.0") >= 0 && ss[0].compareTo("191.255.255.255") <= 0) {
-                    if(ss[0].compareTo("172.16.0.0") >= 0 && ss[0].compareTo("172.31.255.255") <= 0) {
-                        cntPrivate++;
-                    }
-                    cntB++;
-                } else if(ss[0].compareTo("192.0.0.0") >= 0 && ss[0].compareTo("223.255.255.255") <= 0) {
-                    if(ss[0].compareTo("192.168.0.0") >= 0 && ss[0].compareTo("192.168.255.255") <= 0) {
-                        cntPrivate++;
-                    }
-                    cntC++;
-                } else if(ss[0].compareTo("224.0.0.0") >= 0 && ss[0].compareTo("239.255.255.255") <= 0) {
-                    cntD++;
-                } else if(ss[0].compareTo("240.0.0.0") >= 0 && ss[0].compareTo("255.255.255.255") <= 0) {
-                    cntE++;
-                }
-            }
-            if(!checkMask(ss[1])) {
-                cntErr++;
-            }
-        }
-        System.out.printf("%d %d %d %d %d %d %d\n", cntA, cntB, cntC, cntD, cntE, cntErr, cntPrivate);
+
+        String[] ss = "D:\\zwtymj\\xccb\\ljj\\cqzlyaszjvlsjmkwoqijggmybr 645".split("\\\\");
+        System.out.println(ss[ss.length - 1].substring(0, 160));
+
+
+
     }
     private static boolean check(String s) {
         String[] ss = s.split("\\.");
