@@ -224,7 +224,8 @@ com.example.trie.Leetcode_208
 com.example.trie.Leetcode_440
 
 ## 21 图(graph)
-
+#### 21.1 [leetcode] 743. 网络延迟时间
+com.example.graph.Leetcode_743
 
 # 剑指 Offer
 #### 剑指 Offer 13. 机器人的运动范围
