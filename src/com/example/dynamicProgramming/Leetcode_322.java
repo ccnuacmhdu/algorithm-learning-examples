@@ -39,7 +39,7 @@ public class Leetcode_322 {
         int min_coins = dp[0][amount];
         for(int i = 1; i < n; i++) {
             for(int v = 1; v <= amount; v++) {
-                dp[i][v] = MAX_VALUE;
+                dp[i][v] = dp[i - 1][v];
                 for(int k = 0; k * coins[i] <= v; k++) {
                     dp[i][v] = Math.min(dp[i][v], dp[i - 1][v - k * coins[i]] + k);
                 }
