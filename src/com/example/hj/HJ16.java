@@ -2,6 +2,9 @@ package com.example.hj;
 
 import java.util.*;
 
+/**
+ * HJ16 购物单
+ */
 public class HJ16 {
 
     public static void main(String[] args) {

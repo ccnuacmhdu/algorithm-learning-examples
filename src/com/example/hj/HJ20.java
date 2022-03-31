@@ -1,8 +1,11 @@
-package com.example;
+package com.example.hj;
 
 import java.util.*;
 
-public class Main {
+/**
+ * HJ20 密码验证合格程序
+ */
+public class HJ20 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -38,41 +41,4 @@ public class Main {
         return true;
     }
 
-}
-
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
 }
