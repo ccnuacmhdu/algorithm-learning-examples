@@ -1,8 +1,13 @@
-package com.example;
+package com.example.hj;
 
 import java.util.*;
 
-public class Main {
+/**
+ * HJ41 称砝码
+ *
+ * tips：转为01背包问题，判定可以达到哪些值
+ */
+public class HJ41 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
@@ -38,38 +43,37 @@ public class Main {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+// 超时（暴力dfs）
+//import java.util.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        while (scanner.hasNext()) {
+//            int n = scanner.nextInt();
+//            int[] a = new int[n];
+//            int[] cnt = new int[n];
+//            for(int i = 0; i < n; i++) {
+//                a[i] = scanner.nextInt();
+//            }
+//            for(int i = 0; i < n; i++) {
+//                cnt[i] = scanner.nextInt();
+//            }
+//            Set<Integer> set = new HashSet<>();
+//            dfs(a, cnt, 0, 0, set);
+//            System.out.println(set.size());
+//        }
+//    }
+//    private static void dfs(int[] a, int[] cnt, int i, int cur, Set<Integer> set) {
+//        if(i == a.length) {
+//            return;
+//        }
+//        set.add(cur);
+//        for(int k = 0; k <= cnt[i]; k++) {
+//            int num = cur + k * a[i];
+//            set.add(num);
+//            dfs(a, cnt, i + 1, num, set);
+//        }
+//    }
+//}
