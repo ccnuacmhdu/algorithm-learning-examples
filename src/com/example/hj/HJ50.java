@@ -1,27 +1,31 @@
-package com.example;
+package com.example.hj;
 
 import java.util.*;
 
-public class Main {
+/**
+ * HJ50 四则运算
+ *
+ * tips: 中缀表达式运算，中缀转后缀再计算
+ */
+public class HJ50 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
             String str = sc.nextLine();
-            // 初始化，将"{}""[]"替换为"()"
             str = str.replace("[", "(")
                     .replace("{", "(")
                     .replace("]", ")")
                     .replace("}", ")");
-            System.out.println(culSuffix(infixToSuffix(str)));
+            System.out.println(calSuffix(infix2Suffix(str)));
         }
     }
 
     // 中缀表达式 转 后缀表达式
-    public static List<String> infixToSuffix(String str) {
+    public static List<String> infix2Suffix(String str) {
         List<String> result = new ArrayList<>();
-        Stack<Character> operateStack = new Stack<>();
+        Stack<Character> operatorStack = new Stack<>();
         boolean flag = true;
-        String temp = "";
+        String tmp = "";
         for (char c : str.toCharArray()) {
             // 负数开头处理（补零）
             if (flag && c == '-') {
@@ -30,40 +34,40 @@ public class Main {
             flag = false;
             // 多位数处理
             if (c >= '0' && c <= '9') {
-                temp += c;
+                tmp += c;
                 continue;
             }
             // 数字入栈（集合）
-            if (temp.length() > 0) {
-                result.add(temp);
-                temp = "";
+            if (tmp.length() > 0) {
+                result.add(tmp);
+                tmp = "";
             }
             // 符号入栈（集合）
-            if (operateStack.empty() || operateStack.peek() == '(') {
-                operateStack.push(c);
+            if (operatorStack.empty() || operatorStack.peek() == '(') {
+                operatorStack.push(c);
             } else if (c == '(') {
-                operateStack.push(c);
+                operatorStack.push(c);
                 flag = true;
             } else if (c == ')'){
-                while (operateStack.peek() != '(') {
-                    result.add(operateStack.pop() + "");
+                while (operatorStack.peek() != '(') {
+                    result.add(operatorStack.pop() + "");
                 }
-                operateStack.pop();
+                operatorStack.pop();
             } else {
-                while (!operateStack.empty()
-                        && operateStack.peek() != '('
-                        && getPriority(c) <= getPriority(operateStack.peek())) {
-                    result.add(operateStack.pop() + "");
+                while (!operatorStack.empty()
+                        && operatorStack.peek() != '('
+                        && getPriority(c) <= getPriority(operatorStack.peek())) {
+                    result.add(operatorStack.pop() + "");
                 }
-                operateStack.push(c);
+                operatorStack.push(c);
             }
         }
         // 后续处理
-        if (temp.length() > 0) {
-            result.add(temp);
+        if (tmp.length() > 0) {
+            result.add(tmp);
         }
-        while (!operateStack.empty()) {
-            result.add(operateStack.pop() + "");
+        while (!operatorStack.empty()) {
+            result.add(operatorStack.pop() + "");
         }
         return result;
     }
@@ -80,18 +84,16 @@ public class Main {
     }
 
     // 计算后缀表达式
-    public static int culSuffix(List<String> list) {
+    public static int calSuffix(List<String> list) {
         Stack<Integer> numStack = new Stack<>();
-        Stack<String> operateStack = new Stack<>();
-        Integer temp = null;
         for (String item : list) {
             switch (item) {
                 case "+" :
                 case "-" :
                 case "*" :
                 case "/" :
-                    temp = cul(numStack.pop(), numStack.pop(), item);
-                    numStack.push(temp);
+                    int tmp = cal(numStack.pop(), numStack.pop(), item);
+                    numStack.push(tmp);
                     break;
                 default :
                     numStack.push(Integer.parseInt(item));
@@ -101,8 +103,8 @@ public class Main {
     }
 
     // 计算加 减 乘 除
-    public static int cul(int num1, int num2, String operate) {
-        switch (operate) {
+    public static int cal(int num1, int num2, String operator) {
+        switch (operator) {
             case "+" :
                 return num2 + num1;
             case "-" :
@@ -113,41 +115,5 @@ public class Main {
                 return num2 / num1;
         }
         throw new RuntimeException("异常数据，计算失败！");
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
