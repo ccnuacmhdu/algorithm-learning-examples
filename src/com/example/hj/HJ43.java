@@ -1,8 +1,11 @@
-package com.example;
+package com.example.hj;
 
 import java.util.*;
 
-public class Main {
+/**
+ * HJ43 迷宫问题
+ */
+public class HJ43 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
@@ -31,49 +34,13 @@ public class Main {
         }
         matrix[i][j] = 1;
         boolean ret = dfs(matrix, i + 1, j, path)
-                        || dfs(matrix, i - 1, j, path)
-                        || dfs(matrix, i, j + 1, path)
-                        || dfs(matrix, i, j - 1, path);
+                || dfs(matrix, i - 1, j, path)
+                || dfs(matrix, i, j + 1, path)
+                || dfs(matrix, i, j - 1, path);
         if(ret) {
             path.add("(" + i + "," + j + ")");
         }
         matrix[i][j] = 0;
         return ret;
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
