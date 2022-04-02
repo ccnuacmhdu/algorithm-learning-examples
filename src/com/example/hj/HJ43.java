@@ -4,6 +4,8 @@ import java.util.*;
 
 /**
  * HJ43 迷宫问题
+ *
+ * TODO 进阶，如果不止有一条路径，怎么做？
  */
 public class HJ43 {
     public static void main(String[] args) {
