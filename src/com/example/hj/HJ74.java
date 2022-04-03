@@ -1,12 +1,11 @@
-package com.example;
+package com.example.hj;
 
-import sun.nio.cs.ext.MacHebrew;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.*;
 
-public class Main {
+/**
+ * HJ74 参数解析
+ */
+public class HJ74 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
@@ -32,41 +31,5 @@ public class Main {
             }
             System.out.println(count + "\n" + sb.toString());
         }
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
