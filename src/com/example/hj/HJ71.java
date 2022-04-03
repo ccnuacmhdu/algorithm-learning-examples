@@ -1,12 +1,11 @@
-package com.example;
+package com.example.hj;
 
-import sun.nio.cs.ext.MacHebrew;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.*;
 
-public class Main {
+/**
+ * HJ71 字符串通配符
+ */
+public class HJ71 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
@@ -30,7 +29,7 @@ public class Main {
                     } else if(r == '*') {
                         dp[i][j] = check(c) ? (dp[i - 1][j - 1] || dp[i - 1][j] || dp[i][j - 1]) : false;
                     } else if(r == c) {
-                        dp[i][j] = true;
+                        dp[i][j] = dp[i - 1][j - 1];
                     } else {
                         dp[i][j] = false;
                     }
@@ -44,41 +43,5 @@ public class Main {
             return true;
         }
         return false;
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
     }
 }
