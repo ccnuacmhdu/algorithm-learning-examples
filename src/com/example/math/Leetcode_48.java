@@ -1,18 +1,17 @@
 package com.example.math;
 
 public class Leetcode_48 {
-    // (r, c) -> (c, n-1-r)
-    // n = 3, (0, 0), (0, 1) 分别出发
-    // n = 4, (0, 0), (0, 1), (1, 0), (1, 1) 分别出发
+    // (0, 0) -> (0, 2) -> (2, 2) -> (2, 0) -> (0, 0)
+    // (0, 1) -> (1, 2) -> (2, 1) -> (1, 0) -> (0, 1)
     public void rotate(int[][] matrix) {
         int n = matrix.length;
-        for(int r = 0; r < n / 2; r++) {
-            for(int c = 0; c < (n + 1) / 2; c++) {
-                int t = matrix[c][n-1-r];
-                matrix[c][n-1-r] = matrix[r][c];
-                matrix[r][c] = matrix[n-1-c][r];
-                matrix[n-1-c][r] = matrix[n-1-r][n-1-c];
-                matrix[n-1-r][n-1-c] = t;
+        for(int i = 0; i < n / 2; i++) {
+            for(int j = 0; j < (n + 1) / 2; j++) {
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[n - 1 - j][i]; // j + (n - 1 - j) = n - 1, i = i
+                matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j]; // n - 1 - j = n - 1 -j, i + (n - 1 - i) = n - 1
+                matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i]; // n - 1 - i = n - 1 - i, (n - 1 - j) + j = n - 1
+                matrix[j][n - 1 - i] = t;
             }
         }
     }

@@ -4,49 +4,48 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextLine()) {
-            String s1 = scanner.nextLine();
-            String s2 = scanner.nextLine();
-            if(s1 == null || s2 == null || s1.trim().length() == 0 || s2.trim().length() == 0) {
-                System.out.println(0);
-                continue;
-            }
-            String[] digits = s1.split(" ");
-            String[] colors = s2.split(" ");
-            int n = digits.length;
-            int max = 0;
-            for(int i = 0; i < n; i++) {
-                Set<Integer> set = new HashSet<>();
-                set.add(i);
-                for(int k = 0; k < 10; k++) {
-                    boolean flag = false;
-                    for(int j = 0; j < n; j++) {
-                        if(!set.contains(j)) {
-                            boolean has = false;
-                            Iterator<Integer> iter = set.iterator();
-                            while (iter.hasNext()) {
-                                int id = iter.next();
-                                if(digits[id].equals(digits[j]) || colors[id].equals(colors[j])) {
-                                    has = true;
-                                    flag = true;
-                                    break;
-                                }
-                            }
-                            if(has) set.add(j);
-                        }
-                    }
-                    if(!flag) break;
-                }
-                max = Math.max(max, set.size());
-            }
-            System.out.println(max);
-        }
+        int[] a = {3,2,1,5,6,4};
+        int k = 2;
+        int ret = findKthLargest(a, 2);
+        System.out.println(ret);
     }
 
-    public int findKthLargest(int[] nums, int k) {
-        Arrays.sort(nums);
+    public static int findKthLargest(int[] nums, int k) {
+        mergeSort(nums);
         return nums[nums.length - k];
+    }
+
+    private static void mergeSort(int[] a) {
+        if(a == null || a.length < 2) return;
+        mergeSort(a, 0, a.length - 1);
+    }
+    private static void mergeSort(int[] a, int st, int en) {
+        if(st >= en) return;
+        int mid = st + ((en - st) >> 1);
+        mergeSort(a, st, mid);
+        mergeSort(a, mid + 1, en);
+        merge(a, st, mid, en);
+    }
+    private static void merge(int[] a, int st, int mid, int en) {
+        int[] tmp = new int[en - st + 1];
+        int cnt = 0;
+        int l = 0, r = mid + 1;
+        while(l <= mid && r <= en) {
+            if(a[l] <= a[r]) {
+                tmp[cnt++] = a[l++];
+            } else {
+                tmp[cnt++] = a[r++];
+            }
+        }
+        while(l <= mid) {
+            tmp[cnt++] = a[l++];
+        }
+        while(r <= en) {
+            tmp[cnt++] = a[r++];
+        }
+        for(int k = 0; k < cnt; k++) {
+            a[k + st] = tmp[k];
+        }
     }
 
 }
