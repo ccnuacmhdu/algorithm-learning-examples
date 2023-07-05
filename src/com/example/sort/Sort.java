@@ -30,13 +30,13 @@ import java.util.PriorityQueue;
  * 7）堆排序：不稳定。在堆上调整的过程本身就不是稳定的，堆排序的第一步把不断调成大根堆的过程中，比如序列 7 3 6 6 形成大根堆的过程中，就已经不稳定了。
  * <p>
  * 4. 常见排序时空复杂度及稳定性汇总
- * 时间复杂度    空间复杂度     稳定性
- * 冒泡排序     O(N^2)      O(1)        Y
- * 插入排序     O(N^2)      O(1)        Y
- * 选择排序     O(N^2)      O(1)        N
- * 归并排序     O(N*logN)   O(N)        Y
- * 快速排序     O(N*logN)   O(logN)     N
- * 堆排序     O(N*logN)   O(1)        N
+ *             时间复杂度    空间复杂度     稳定性
+ * 冒泡排序     O(N^2)      O(1)            Y
+ * 插入排序     O(N^2)      O(1)            Y
+ * 选择排序     O(N^2)      O(1)            N
+ * 归并排序     O(N*logN)   O(N)            Y
+ * 快速排序     O(N*logN)   O(logN)         N
+ * 堆排序      O(N*logN)   O(1)            N
  **/
 public class Sort {
     public static void main(String[] args) {
