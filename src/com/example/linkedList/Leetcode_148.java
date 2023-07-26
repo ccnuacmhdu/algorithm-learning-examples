@@ -43,6 +43,7 @@ public class Leetcode_148 {
     public ListNode sortList(ListNode head) {
         return sortList(head, null);
     }
+    // 左闭右开
     private ListNode sortList(ListNode from, ListNode to) {
         // 0 个节点
         if (from == null) {
