@@ -25,6 +25,8 @@ public class Leetcode_105 {
         buildIndexMap(inorder, indexMap);
         return process(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1, indexMap);
     }
+    // 左子树个数：(loc - 1）- inSt + 1 = loc - inSt
+    // 左子树先序终点：preSt + 1 + (loc - inSt) - 1 = preSt + loc - inSt
     private TreeNode process(int[] preorder, int preSt, int preEn, int[] inorder, int inSt, int inEn, Map<Integer, Integer> indexMap) {
         if(preSt > preEn) return null;
         TreeNode r = new TreeNode(preorder[preSt]);
